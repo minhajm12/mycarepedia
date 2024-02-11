@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=DM+Serif+Display:ital@0;1&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'DM Serif Display', serif;
+}
+
+
+
+:root
+{
+    --maincolor:#04285B;
+    --scndcolor:#00B7D4;
+}
+
+
+/* TOP NAVBAR */
+.topnavbar
+{
+    padding:1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.search-div
+{
+    border: solid 1px var(--maincolor);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    /* grid-template-columns: repeat(6, 1fr); */
+}
+/* @media screen and (max-width: 1536px) {
+    .search-div
+{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media screen and (max-width: 992px) {
+    .search-div
+{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+} */
+/* @media screen and (max-width: 768px) {
+    .search-div
+{
+    grid-template-columns: repeat(1, 1fr);
+}
+} */
+.search-div input
+{
+    border: none;
+    background: #F4F9FF;
+    padding:5px 10px;
+    outline: none;
+    color: var(--maincolor);
+}
+.search-div input::placeholder
+{
+    color: var(--maincolor);
+    font-size: 14px;
+}
+.search-div .search-btn
+{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: var(--maincolor);
+}
+
+
+.login-div
+{
+}
+.login-div .login-btn
+{
+    padding: 10px 30px;
+    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    text-wrap: nowrap;
+}
+.login-dropdown
+{
+    position: absolute;
+    bottom: -75%;
+    right: 5%;
+}
