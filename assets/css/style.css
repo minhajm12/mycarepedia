@@ -9,6 +9,7 @@
 body
 {
     font-family: 'DM Sans', sans-serif;
+    color: var(--maincolor);
 }
 
 h1,h2,h3,h4,h5,h6
@@ -23,6 +24,16 @@ h1,h2,h3,h4,h5,h6
     --maincolor:#04285B;
     --scndcolor:#00B7D4;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* TOP NAVBAR */
@@ -83,6 +94,17 @@ h1,h2,h3,h4,h5,h6
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* LOGIN DROPDOWN SECTION */
 .login-div
 {
 }
@@ -99,6 +121,195 @@ h1,h2,h3,h4,h5,h6
 .login-dropdown
 {
     position: absolute;
-    bottom: -75%;
+    top: 80%;
     right: 5%;
+    padding: 10px;
+    box-shadow: 0 0 20px #00000020;
+    border-radius: 25px;
+    background: #fff;
+    z-index: 15;
+}
+.login-dropdown .nav-pills
+{
+    padding: 5px;
+    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    border-radius: 20px;
+}
+.login-dropdown .nav-item button
+{
+    padding:2px 30px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.login-dropdown .nav-item button.active
+{
+    background: #fff;
+    color: var(--maincolor);
+}
+.login-dropdown .login-signup
+{
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* gap:5px; */
+    align-items: center;
+    /* justify-content: space-between; */
+    /* gap: 5px; */
+    /* padding: 0px 40px; */
+    /* background: #EDF4FF; */
+    border-radius: 5px;
+    /* width: fit-content; */
+}
+.login-dropdown .login-signup .btn
+{
+    padding: 5px 10px;
+    font-size: 16px;
+    color: var(--maincolor);
+    font-weight: 500;
+    border-radius: 15px;
+}
+.login-dropdown .login-signup .btn:hover
+{
+    border:solid 1px var(--maincolor);
+    /* color: #fff; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SUB NAVBAR */
+
+.sub-navbar .container-fluid
+{
+    padding: 0 5%;
+}
+.sub-navbar .navbar
+{
+    background: var(--maincolor) !important;
+}
+.sub-navbar .auto-location
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.sub-navbar .auto-location p, .sub-navbar .auto-location i
+{
+    color: #fff !important;
+    margin: 0;
+}
+/* .sub-navbar .main-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+.sub-navbar .nav-link
+{
+    color:#fff !important;
+    font-weight: 500 !important;
+    padding: 2px 15px !important;
+}
+.sub-navbar .nav-link.active
+{
+    background:#fff;
+    color: var(--maincolor) !important;
+    border-radius: 20px;
+}
+.sub-navbar .navbar-nav
+{
+    gap:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.herosection
+{
+    width: 100%;
+    height: calc(100vh - var(--top-header-height, 20px) - var(--sub-header-height));
+    background-image:url('../img/hero-section/banner-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.herosection .right .hero-img-div
+{
+    position: relative;
+}
+.herosection .right .img-1
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    animation: scale-img 6s ease-in-out infinite;
+}
+.herosection .right .img-2
+{
+    position: relative;
+    z-index: 2;
+}
+.herosection .right .img-3
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 3;
+    animation: ping-pong-img 4s ease-in-out infinite;
+}
+
+@keyframes scale-img
+{
+    0%,100%
+    {
+        transform: scale(.9);
+    }
+    50%
+    {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes ping-pong-img
+{
+    0%,100%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-15px);
+    }
 }
