@@ -29,3 +29,47 @@ const SubHeaderHeight = document.querySelector('.sub-navbar').offsetHeight;
 
 document.documentElement.style.setProperty('--top-header-height',`${TopHeaderHeight}px`)
 document.documentElement.style.setProperty('--sub-header-height',`${SubHeaderHeight}px`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// DOCTORS SLIDER
+
+$(document).ready(function(){
+    $('.doctors-items').owlCarousel({
+        // margin:20,
+        // infinite:true,
+        loop:true,
+        nav: true,
+        // dots:true,
+        // dotsEach: true,
+        autoplay:true,
+        slideToScroll:1,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1300:{
+                items:3
+            },
+            1500:{
+                items:3
+            }
+        }
+      })
+});

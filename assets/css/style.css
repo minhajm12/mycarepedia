@@ -1,5 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=DM+Serif+Display:ital@0;1&display=swap');
 
+
+
+/* IMPORTING LOCAL FONT METROPOLIS */
+
+/* metropolis-latin-100-normal */
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-100-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-100-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-200-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 200;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-200-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-200-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-300-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-300-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-300-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-400-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-400-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-500-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-500-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-600-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-600-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-700-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-700-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-700-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-800-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 800;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-800-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-800-normal.woff) format('woff');
+  }
+  
+  /* metropolis-latin-900-normal */
+  @font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+    src: url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-900-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/metropolis@latest/latin-900-normal.woff) format('woff');
+  }
+
 *
 {
     margin: 0;
@@ -14,19 +99,32 @@ body
 
 h1,h2,h3,h4,h5,h6
 {
-    font-family: 'DM Serif Display', serif;
+    font-family:var(--metropolis);
+    margin: 0;
 }
 
+p
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
 
 
 :root
 {
     --maincolor:#04285B;
     --scndcolor:#00B7D4;
+    --metropolis:'Metropolis', sans-serif;
 }
 
-
-
+.scndry-text
+{
+    color: var(--scndcolor);
+}
 
 
 
@@ -216,13 +314,19 @@ h1,h2,h3,h4,h5,h6
 {
     color:#fff !important;
     font-weight: 500 !important;
-    padding: 2px 15px !important;
+    padding: 2px 20px !important;
+    border-radius: 20px;
+}
+.sub-navbar .nav-link:hover
+{
+    background: #fff;
+    color: var(--maincolor) !important;
 }
 .sub-navbar .nav-link.active
 {
     background:#fff;
     color: var(--maincolor) !important;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .sub-navbar .navbar-nav
 {
@@ -251,7 +355,7 @@ h1,h2,h3,h4,h5,h6
 
 
 
-
+/* HEROSECTION */
 .herosection
 {
     width: 100%;
@@ -266,12 +370,15 @@ h1,h2,h3,h4,h5,h6
 .herosection .right .hero-img-div
 {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 .herosection .right .img-1
 {
     position: absolute;
     top:0;
-    left: 0;
+    right: 0;
     z-index: 1;
     animation: scale-img 6s ease-in-out infinite;
 }
@@ -284,7 +391,7 @@ h1,h2,h3,h4,h5,h6
 {
     position: absolute;
     top:0;
-    left: 0;
+    right: 0;
     z-index: 3;
     animation: ping-pong-img 4s ease-in-out infinite;
 }
@@ -312,4 +419,410 @@ h1,h2,h3,h4,h5,h6
     {
         transform: translateY(-15px);
     }
+}
+
+.herosection .left
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+}
+.herosection .left .banner-text
+{
+    font-size: 54px;
+    font-family: 'DM Serif Display', serif;
+}
+.main-para
+{
+    font-size: 18px;
+}
+.herosection .left .main-para
+{
+    padding-right: 100px;
+}
+.herosection .left a
+{
+    text-decoration: none;
+}
+
+.main-outline-btn
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 40px;
+    border: 1px solid var(--maincolor);
+    border-radius: 30px;
+    font-size: 18px;
+    color: var(--maincolor);
+    font-weight: 600;
+    transition: .3s ease;
+    width: fit-content;
+    font-family: var(--metropolis) !important;
+    letter-spacing: .5px;
+}
+.main-outline-btn:hover
+{
+    background: var(--scndcolor);
+    color: #fff;
+    border: 1px solid var(--scndcolor);
+}
+.main-outline-btn img
+{
+    transition: .3s ease;
+}
+.main-outline-btn:hover img
+{
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SPECIALITIES SECTION */
+.specialities-section
+{
+    padding: 10% 0;
+}
+
+.top-head
+{
+    color: var(--scndcolor);
+    font-size: 22px;
+    font-family: 'DM Serif Display', serif;
+}
+.main-head
+{
+    font-size: 40px;
+    color: var(--maincolor);
+    font-family: 'DM Serif Display', serif;
+    text-transform: capitalize;
+}
+.specialities-section .bottom-sec
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top:120px;
+    gap:20px;
+}
+.specialities-section .bottom-sec .spe-items
+{
+    border: 2px solid var(--scndcolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 30px;
+}
+.specialities-section .bottom-sec .icon-div
+{
+    background: var(--maincolor);
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: -70px;
+}
+.specialities-section .bottom-sec .desc-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 20px 0;
+}
+.specialities-section .bottom-sec h4
+{
+    font-weight: 700;
+    font-family:var(--metropolis);
+    font-size: 24px;
+}
+.specialities-section .bottom-sec .main-para
+{
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+.specialities-section .main-outline-btn
+{
+    padding: 5px 30px;
+    font-size: 14px;
+}
+.specialities-section .btn-sec
+{
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+}
+.main-fill-btn
+{
+    background: var(--maincolor);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding:10px 40px;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    gap:10px;
+    transition: .3s ease;
+    font-weight: 500;
+    font-family: var(--metropolis) !important;
+    letter-spacing: .5px;
+}
+.main-fill-btn img
+{
+    filter: brightness(0) invert(1);
+}
+.main-fill-btn:hover
+{
+    background: var(--scndcolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BENEFITS SECTION */
+.benefits-sec
+{
+    padding: 0 0 10% 0;
+}
+.benefits-sec .bottom-sec .items
+{
+    margin-top: 80px;
+}
+.benefits-sec .bottom-sec .details-sec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    /* padding-left: 60px; */
+}
+.benefits-sec .bottom-sec .tag-head
+{
+    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    width: fit-content;
+    border-radius: 5px;
+    padding: 3px 20px;
+    color: #fff;
+    font-weight: 500;
+}
+.benefits-sec .bottom-sec .point-list
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.benefits-sec .bottom-sec .points
+{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.benefits-sec .bottom-sec .points .desc
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.benefits-sec .bottom-sec .points h6
+{
+    font-family:var(--metropolis);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.benefits-sec .bottom-sec .points p
+{
+    line-height: 18px;
+}
+.benefits-sec .bottom-sec .main-outline-btn
+{
+    padding: 8px 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CTASECTION */
+.first-cta-section
+{
+    padding: 0 0 10% 0;
+}
+.first-cta-section .main-bg
+{
+    background:#E0EDFF url('../img/cta-bg.png');
+    background-position: center left ;
+    background-size: contain;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+}
+.first-cta-section .left
+{
+    display: flex;
+    justify-content: center;
+}
+.first-cta-section .right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DOCTORS SECTION */
+.doctors-section
+{
+    padding: 0 0 10% 0;
+}
+.doctors-section .doctors-items
+{
+    display: flex;
+    gap:20px;
+}
+.doctors-section .doctors-items .doctors
+{
+    box-shadow: 0 0 10px #00000010;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.doctors-section .card-img
+{
+    position: relative;
+    overflow: hidden;
+}
+.doctors-section .card-img img
+{
+    transition: .3s ease;
+    width: 100% !important;
+}
+.doctors-section .card-img .recomment
+{
+    padding: 5px 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background: #ffffff90;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    font-family: var(--metropolis);
+    font-weight: 600;
+    border-radius: 0 20px 20px 0;
+    /* font-size: 16px; */
+}
+.doctors-section .card-desc
+{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.doctors-section .card-desc h6
+{
+    font-weight: 700;
+    font-size: 22px;
+}
+.doctors-section .card-desc .designation
+{
+    font-weight: 500;
+    font-size: 16px;
+}
+.doctors-section .card-desc .available
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.doctors-section .card-desc .available p
+{
+    color: #01A811;
+    font-weight: 500;
+}
+.doctors-section .card-desc .unavailable
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.doctors-section .card-desc .unavailable p
+{
+    color: #B0B0B0;
+    font-weight: 500;
+}
+.doctors-section .card-desc .main-btm
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doctors-section .card-desc .main-btm .left
+{
+    gap:10px;
+}
+.doctors-section .card-desc .main-btm .rating
+{
+    font-weight: 700;
+}
+.doctors-section .card-desc .main-fill-btn
+{
+    padding: 8px 30px;
+    font-size:14px;
+    font-weight: 400;
+}
+.doctors-section .owl-carousel .owl-item img
+{
+    width: unset;
+}
+.doctors-section .owl-carousel .owl-stage-outer
+{
+    /* padding: 20px 10px; */
+}
+.doctors-section .doctors:hover .card-img img
+{
+    transform: scale(1.1);
 }
