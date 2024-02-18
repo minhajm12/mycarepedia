@@ -49,27 +49,57 @@ document.documentElement.style.setProperty('--sub-header-height',`${SubHeaderHei
 
 $(document).ready(function(){
     $('.doctors-items').owlCarousel({
-        // margin:20,
-        // infinite:true,
-        loop:true,
+        // margin: 20, // Adjust margin if needed
+        loop: true,
         nav: true,
-        // dots:true,
-        // dotsEach: true,
-        autoplay:true,
-        slideToScroll:1,
+        autoplay: true,
+        autoplayTimeout: 5000, // Adjust autoplay timeout if needed
         responsive:{
             0:{
-                items:1
+                items: 1
             },
             600:{
-                items:2
+                items: 2
             },
             1300:{
-                items:3
-            },
-            1500:{
-                items:3
+                items: 3
             }
+            // 1500:{
+            //     items: 3
+            // }
         }
-      })
+    });
+});
+
+
+
+
+
+
+
+
+// TESTIMONIAL SLIDER
+
+$(document).ready(function(){
+    $('.testimonials').owlCarousel({
+        margin: 20, // Adjust margin if needed
+        loop: true,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 5000, // Adjust autoplay timeout if needed
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 2
+            },
+            1300:{
+                items: 3
+            }
+            // 1500:{
+            //     items: 3
+            // }
+        }
+    });
 });

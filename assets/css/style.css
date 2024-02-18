@@ -126,6 +126,13 @@ a
     color: var(--scndcolor);
 }
 
+.topsec
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
 
 
 
@@ -476,6 +483,7 @@ a
 .main-outline-btn:hover img
 {
     filter: brightness(0) invert(1);
+    rotate: 45deg;
 }
 
 
@@ -584,10 +592,15 @@ a
 .main-fill-btn img
 {
     filter: brightness(0) invert(1);
+    transition: .3s ease;
 }
 .main-fill-btn:hover
 {
     background: var(--scndcolor);
+}
+.main-fill-btn:hover img
+{
+    rotate: 45deg;
 }
 
 
@@ -723,6 +736,7 @@ a
 {
     display: flex;
     gap:20px;
+    flex-direction: column;
 }
 .doctors-section .doctors-items .doctors
 {
@@ -808,11 +822,19 @@ a
 {
     font-weight: 700;
 }
+.doctors-section .card-desc .main-btm .review
+{
+    font-size: 14px;
+    color: #04285b8f;
+    font-weight: 600;
+}
 .doctors-section .card-desc .main-fill-btn
 {
-    padding: 8px 30px;
+    padding: 8px 20px;
     font-size:14px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
 }
 .doctors-section .owl-carousel .owl-item img
 {
@@ -825,4 +847,156 @@ a
 .doctors-section .doctors:hover .card-img img
 {
     transform: scale(1.1);
+}
+.doctors-section .owl-nav
+{
+    display: flex !important;
+    gap: 15px;
+    /* justify-content: end; */
+    position: absolute;
+    bottom: -60px;
+    right: 5px;
+}
+.doctors-section .owl-nav .owl-next
+{
+    background-image:url(../img/svg/carousel-arrow-r.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.doctors-section .owl-nav .owl-next:hover
+{
+    background-image:url(../img/svg/carousel-arrow-r-hvr.svg) !important;
+}
+.doctors-section .owl-nav .owl-prev
+{
+    background: url(../img/svg/carousel-arrow-l.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.doctors-section .owl-nav .owl-prev:hover
+{
+    background: url(../img/svg/carousel-arrow-l-hvr.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.doctors-section .owl-nav .owl-next span,
+.doctors-section .owl-nav .owl-prev span
+{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tesimonial-section
+{
+    padding: 5% 0;
+    background: url('../img/testimonial-bg.jpg');
+}
+.tesimonial-section .topsec h2,
+.tesimonial-section .topsec p
+{
+    color: #fff !important;
+}
+.tesimonial-section .testi-items
+{
+    background:#fff;
+    border-radius: 20px;
+    /* padding:80px 30px 30px 30px; */
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:40px;
+}
+.icon-div svg path
+{
+    transition: .3s ease;
+}
+.tesimonial-section .testi-items .icon-div
+{
+    display: flex;
+    justify-content: end;
+}
+.tesimonial-section .testi-items:hover .icon-div svg path
+{
+    fill: var(--scndcolor);
+}
+.tesimonial-section .testimonial-content
+{
+    line-height: 20px;
+    font-weight: 400;
+}
+.tesimonial-section .testi-items img
+{
+    border-radius: 8px;
+    width: 50px;
+}
+.tesimonial-section .testi-items .testi-userdiv
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tesimonial-section .testi-userdiv .testi-username
+{
+    font-weight: 700 !important;
+    font-size: 18px;
+    line-height: 20px;
+}
+.tesimonial-section .owl-nav
+{
+    margin-top: 30px;
+    display: flex !important;
+    gap: 15px;
+    justify-content: center;
+    /* position: absolute; */
+    /* bottom: -60px; */
+    /* right: 5px; */
+}
+.tesimonial-section .owl-nav .owl-next
+{
+    background-image:url(../img/svg/testi-next.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.tesimonial-section .owl-nav .owl-next:hover
+{
+    background-image:url(../img/svg/testi-next-hvr.svg) !important;
+}
+.tesimonial-section .owl-nav .owl-prev
+{
+    background: url(../img/svg/testi-prev.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.tesimonial-section .owl-nav .owl-prev:hover
+{
+    background: url(../img/svg/testi-prev-hvr.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.tesimonial-section .owl-nav .owl-next span,
+.tesimonial-section .owl-nav .owl-prev span
+{
+    opacity: 0;
 }
