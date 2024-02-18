@@ -51,22 +51,19 @@ $(document).ready(function(){
     $('.doctors-items').owlCarousel({
         // margin: 20, // Adjust margin if needed
         loop: true,
-        nav: true,
+        nav:true,
         autoplay: true,
         autoplayTimeout: 5000, // Adjust autoplay timeout if needed
         responsive:{
             0:{
-                items: 1
+                items:3
             },
             600:{
-                items: 2
+                items:4
             },
-            1300:{
-                items: 3
+            1000:{
+                items:3
             }
-            // 1500:{
-            //     items: 3
-            // }
         }
     });
 });
@@ -79,27 +76,76 @@ $(document).ready(function(){
 
 
 // TESTIMONIAL SLIDER
-
 $(document).ready(function(){
     $('.testimonials').owlCarousel({
         margin: 20, // Adjust margin if needed
         loop: true,
-        nav: true,
+        nav:true,
         autoplay: true,
         autoplayTimeout: 5000, // Adjust autoplay timeout if needed
         responsive:{
             0:{
-                items: 1
+                items:3
             },
             600:{
-                items: 2
+                items:4
             },
-            1300:{
-                items: 3
+            1000:{
+                items:3
             }
-            // 1500:{
-            //     items: 3
-            // }
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BLOG SLIDER
+$(document).ready(function(){
+    $('.blogmain').owlCarousel({
+        margin: 20, // Adjust margin if needed
+        loop: true,
+        nav:true,
+        autoplay: true,
+        autoplayTimeout: 5000, // Adjust autoplay timeout if needed
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:3
+            }
         }
     });
 });
