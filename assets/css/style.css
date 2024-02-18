@@ -196,6 +196,11 @@ a
     padding: 5px 10px;
     border-radius: 5px;
     background: var(--maincolor);
+    transition: .3s ease;
+}
+.search-div .search-btn:hover
+{
+    background: var(--scndcolor);
 }
 
 
