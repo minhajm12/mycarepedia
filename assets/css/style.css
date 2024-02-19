@@ -1134,6 +1134,17 @@ a
 {
     gap:10px;
 }
+.updates-section .right
+{
+    display: flex;
+    align-items: center;
+}
+.updates-section .left .img-div
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 60px 0 20px;
+}
 
 
 
@@ -1162,6 +1173,7 @@ a
 {
     border-radius: 20px;
     overflow: hidden;
+    height: 220px;
 }
 .blog-section .blog-img-div img
 {
@@ -1495,7 +1507,7 @@ a
 /* SEARCH RESULTS */
 .searchresult-sec
 {
-    padding:2% 5% 3%;
+    padding:2% 5% 6%;
 }
 .searchresult-sec .left
 {
@@ -1506,6 +1518,10 @@ a
     display: flex;
     align-items: center;
     gap: 20px;
+}
+.searchresult-sec .search-main
+{
+    margin-top:40px
 }
 .searchresult-sec .search-main .recommend-sec
 {
@@ -1538,7 +1554,7 @@ a
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 100px;
-    gap: 100px 40px;
+    gap: 100px 35px;
 }
 .searchresult-sec .search-main .result-doctors
 {
@@ -1659,4 +1675,175 @@ a
 .searchresult-sec .owl-nav .owl-prev span
 {
     opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CSS */
+@media screen and (max-width: 1536px)
+{
+    .topnavbar
+    {
+        padding: 1% 3%;
+        flex-wrap: wrap;
+    }
+    .login-div
+    {
+        display: flex;
+        justify-content: end;
+    }
+
+    
+    .sub-navbar .container-fluid
+    {
+        padding: 0 3%;
+    }
+    .login-div .login-btn
+    {
+        padding: 8px 20px;
+    }
+
+    
+    .search-div input
+    {
+        width: 170px;
+    }
+    .sub-navbar .navbar-nav
+    {
+        gap:10px;
+    }
+    .herosection .right
+    {
+        padding: 80px;
+    }
+    .benefits-sec .bottom-sec .img-sec
+    {
+        padding: 40px;
+    }
+    .scnd-cta-section
+    {
+        padding: 6% 0;
+    }
+    .updates-section .left .img-div
+    {
+        padding: 0 80px;
+    }
+
+
+    .searchresult-sec
+    {
+        padding: 2% 3% 8%;
+    }
+
+    .searchresult-sec .search-main
+    {
+        margin-top:60px;
+    }
+    .searchresult-sec .search-main .recommend-sec
+    {
+        font-size: 10px;
+    }
+    .searchresult-sec .search-main .result-doctors
+    {
+        padding: 15px;
+        gap: 10px;
+    }
+    .searchresult-sec .search-main .results-sec
+    {
+        margin-top:60px;
+    }
+    .searchresult-sec .doc-desc p
+    {
+        font-size: 14px;
+    }
+    .searchresult-sec .main-fill-btn
+    {
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width: 992px)
+{
+    .search-div
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    .search-div input
+    {
+        width: 100%;
+    }
+    .search-btn
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+        flex-direction: row-reverse;
+    }
+    .search-btn p
+    {
+        display: block;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .searchresult-sec .search-main .results-sec
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+
+
+
+    .whychoose-items
+    {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .footer-main .collapse:not(.show)
+    {
+        display: block;
+    }
+    .footer-section .footer-main
+    {
+        padding: 20% 5% 8% 5%;;
+    }
 }

@@ -165,7 +165,7 @@ let SearchBtn = document.querySelector('.search-btn')
 let SearchResult = document.querySelector('.searchresult-sec')
 
 SearchBtn.addEventListener("click", function(){
-    SearchResult.classList.toggle('d-none')
+    SearchResult.classList.remove('d-none')
 })
 
 
