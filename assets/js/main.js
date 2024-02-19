@@ -149,3 +149,49 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+// SEARCH RESULT
+
+let SearchBtn = document.querySelector('.search-btn')
+let SearchResult = document.querySelector('.searchresult-sec')
+
+SearchBtn.addEventListener("click", function(){
+    SearchResult.classList.toggle('d-none')
+})
+
+
+
+
+
+
+// SEARCH RESULT SLIDER
+$(document).ready(function(){
+    $('.search-results-main').owlCarousel({
+        margin: 20, // Adjust margin if needed
+        loop: true,
+        nav:true,
+        dots:false,
+        // autoplay: true,
+        // autoplayTimeout: 5000, // Adjust autoplay timeout if needed
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+});

@@ -570,8 +570,9 @@ a
 }
 .specialities-section .main-outline-btn
 {
-    padding: 5px 30px;
+    padding: 10px 30px;
     font-size: 14px;
+    line-height: normal;
 }
 .specialities-section .btn-sec
 {
@@ -823,6 +824,7 @@ a
 .doctors-section .card-desc .main-btm .left
 {
     gap:10px;
+    align-items: center;
 }
 .doctors-section .card-desc .main-btm .rating
 {
@@ -1467,4 +1469,194 @@ a
 .footer-section .copyright .main-para
 {
     font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SEARCH RESULTS */
+.searchresult-sec
+{
+    padding:2% 5% 3%;
+}
+.searchresult-sec .left
+{
+    /* padding-right: 60px; */
+}
+.searchresult-sec .topsec .main-head
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.searchresult-sec .search-main .recommend-sec
+{
+    font-size: 14px;
+    padding: 8px 20px;
+    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    font-family: var(--metropolis);
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: normal;
+}
+.searchresult-sec .search-main  .img-sec
+{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.searchresult-sec .search-main  .img-sec img
+{
+    /* position: absolute; */
+    margin-top:-70px;
+    border-radius: 10px;
+}
+.searchresult-sec .search-main .results-sec
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    gap: 100px 40px;
+}
+.searchresult-sec .search-main .result-doctors
+{
+    border:1px solid var(--maincolor);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:20px;
+    margin: 1px;
+}
+.searchresult-sec .search-main .name-sec h4
+{
+    font-size: 18px;
+    font-weight: 700;    
+}
+.searchresult-sec .search-main .rating-sec
+{
+    display: flex;
+}
+.searchresult-sec .search-main .rating-sec .rating
+{
+    font-weight: 700;
+    margin:0 20px 0 10px;
+}
+.searchresult-sec .search-main .rating-sec .review
+{
+    font-size: 14px;
+    color: #04285b8f;
+    font-weight: 600;
+}
+.searchresult-sec .main-fill-btn
+{
+    padding:10px 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+.searchresult-sec .available
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.searchresult-sec .available p
+{
+    color: #01A811;
+    font-weight: 500;
+}
+.searchresult-sec .unavailable
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.searchresult-sec .unavailable p
+{
+    color: #B0B0B0;
+    font-weight: 500;
+}
+.searchresult-sec .right-ad img
+{
+    border-radius: 20px;
+}
+.searchresult-sec .doc-desc p
+{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.searchresult-sec .owl-carousel .owl-item img
+{
+    width: unset;
+}
+
+.searchresult-sec .owl-nav
+{
+    margin-top: 30px;
+    display: flex !important;
+    gap: 15px;
+    /* justify-content: end; */
+    position: absolute;
+    bottom: -60px;
+    right: 5px;
+}
+.searchresult-sec .owl-nav .owl-next
+{
+    background-image:url(../img/svg/blog-next.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.searchresult-sec .owl-nav .owl-next:hover
+{
+    background-image:url(../img/svg/blog-next-hvr.svg) !important;
+}
+.searchresult-sec .owl-nav .owl-prev
+{
+    background: url(../img/svg/blog-prev.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 45px !important;
+    height: 45px !important;
+    transition: .3s ease;
+}
+.searchresult-sec .owl-nav .owl-prev:hover
+{
+    background: url(../img/svg/blog-prev-hvr.svg) !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+}
+.searchresult-sec .owl-nav .owl-next span,
+.searchresult-sec .owl-nav .owl-prev span
+{
+    opacity: 0;
 }
