@@ -158,6 +158,7 @@ a
     border-radius: 5px;
     display: flex;
     gap: 5px;
+    background: #fff;
     /* grid-template-columns: repeat(6, 1fr); */
 }
 /* @media screen and (max-width: 1536px) {
@@ -345,7 +346,20 @@ a
 {
     gap:40px;
 }
-
+.sub-navbar .navbar-toggler:focus
+{
+    box-shadow: none !important;
+}
+.navbar-toggler-icon
+{
+    display: flex;
+    align-items: center;
+}
+.navbar-toggler
+{
+    border: none;
+    padding: 0;
+}
 
 
 
@@ -547,6 +561,7 @@ a
     padding: 20px;
     border-radius: 50%;
     margin-top: -70px;
+    border: 10px solid #fff;
 }
 .specialities-section .bottom-sec .desc-div
 {
@@ -641,7 +656,7 @@ a
 }
 .benefits-sec .bottom-sec .tag-head
 {
-    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    background: linear-gradient(to left, #026599, var(--scndcolor));
     width: fit-content;
     border-radius: 5px;
     padding: 3px 20px;
@@ -744,6 +759,10 @@ a
     display: flex;
     gap:20px;
     flex-direction: column;
+}
+.doctors-section .topsec .main-para
+{
+    width: 50%;
 }
 .doctors-section .doctors-items .doctors
 {
@@ -914,6 +933,9 @@ a
     padding: 5% 0;
     background: url('../img/testimonial-bg.jpg');
 }
+.tesimonial-section .main-para{
+    width: 75%;
+}
 .tesimonial-section .topsec h2,
 .tesimonial-section .topsec p
 {
@@ -1026,7 +1048,10 @@ a
     padding:0 5%;
     margin-top: 60px;
 }
-
+.whychoose-section .main-para
+{
+    width: 75%;
+}
 .whychoose-section .whychoose-items
 {
     display: grid;
@@ -1135,6 +1160,11 @@ a
     gap:10px;
 }
 .updates-section .right
+{
+    display: flex;
+    align-items: center;
+}
+.updates-section .left
 {
     display: flex;
     align-items: center;
@@ -1331,7 +1361,7 @@ a
 {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:20px;
 }
 .footer-section .footer-cta .right .img-div
 {
@@ -1423,6 +1453,18 @@ a
 {
     display: flex;
     justify-content: space-between;
+}
+.footer-section .bottom-footer .newsletter-sec
+{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.footer-section .bottom-footer .newsletter-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 .footer-section .bottom-footer .newsletter-sec h4
 {
@@ -1570,7 +1612,8 @@ a
 .searchresult-sec .search-main .name-sec h4
 {
     font-size: 18px;
-    font-weight: 700;    
+    font-weight: 700; 
+    width: 90%;   
 }
 .searchresult-sec .search-main .rating-sec
 {
@@ -1831,12 +1874,211 @@ a
 
 
 
+    .offcanvas
+    {
+        padding: 10px 20px;
+    }
+    .offcanvas .navbar-nav
+    {
+        margin-top: 40px;
+        gap: 30px;
+    }
+    .offcanvas .navbar-nav .nav-link
+    {
+        color: var(--maincolor) !important;
+        font-size: 22px;
+    }
 
 
 
-    .whychoose-items
+
+    .herosection .left
+    {
+        align-items: center;
+    }
+    .herosection .left .main-para
+    {
+        text-align: center;
+        padding: 0 60px;
+    }
+
+
+
+    .specialities-section
+    {
+        padding: 15% 0;
+    }
+    .specialities-section .bottom-sec
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap:80px 50px;
+    }
+
+
+    .benefits-sec
+    {
+        padding: 0 0 15% 0;
+    }
+    .benefits-sec .bottom-sec .items
+    {
+        margin-top: 50px;
+    }
+    .benefits-sec .bottom-sec
+    {
+        padding: 0 40px;
+    }
+    .benefits-sec .bottom-sec .details-sec
+    {
+        margin-top:40px;
+    }
+
+
+    .first-cta-section
+    {
+        padding: 0 0 15% 0;
+    }
+    .first-cta-section .main-head
+    {
+        font-size: 28px;
+    }
+    .first-cta-section .main-bg
+    {
+        background-position: -180px center;
+    }
+
+
+
+    
+    .doctors-section
+    {
+        padding: 0 0 15% 0;
+    }
+    .doctors-section .topsec .main-para
+    {
+        width: 75%;
+    }
+    .doctors-section .card-desc
+    {
+        padding: 15px;
+    }
+    .doctors-section .card-desc .main-btm .review
+    {
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+    .doctors-section .card-desc .main-btm .rating
+    {
+        font-size: 14px;
+    }
+    .doctors-section .card-desc .main-fill-btn
+    {
+        padding: 8px 14px;
+        font-size: 12px;
+        text-wrap: nowrap;
+    }
+    .doctors-section .main-outline-btn
+    {
+        padding: 12px 30px;
+    }
+
+
+
+    .tesimonial-section
+    {
+        padding: 10% 0;
+    }
+    .tesimonial-section .testi-items
+    {
+        gap:20px;
+    }
+    .tesimonial-section .main-para
+    {
+        width: 100%;
+    }
+
+
+
+    .whychoose-section
+    {
+        padding: 15% 0;
+    }
+    .whychoose-section .main-para
+    {
+        width: 100%;
+    }
+    .whychoose-section .whychoose-items
     {
         grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .whychoose-section .whychoose-items .items
+    {
+        padding: 24px 30px;
+    }
+
+
+    .scnd-cta-section .main-head
+    {
+        font-size: 36px;
+    }
+
+
+
+    .updates-section
+    {
+        padding: 15% 0;
+    }
+    .updates-section .right
+    {
+        margin-top:80px;
+    }
+
+
+    .blog-section
+    {
+        padding: 0 0 18% 0;
+    }
+    .blog-section .blog-details .blog-title
+    {
+        font-size: 16px;
+    }
+    .blog-section .blog-desc
+    {
+        padding: 14px;
+    }
+    .blog-section .blog-details .blog-para
+    {
+        margin-top: 10px;
+    }
+
+    
+
+    .footer-section .footer-cta .right .img-div
+    {
+        right: 20px;
+        display: flex;
+        justify-content: end;
+    }
+    .footer-section .footer-cta .footer-cta-img
+    {
+        width: 70%;
+    }
+    .footer-section .footer-cta .main-head
+    {
+        font-size: 36px;
+    }
+    
+
+
+
+    .footer-section .bottom-footer .main .logo-section
+    {
+        display: flex;
+        align-items: center;
+        
+    }
+    .footer-section .bottom-footer .main .logo-section img
+    {
+        width: 80%;
     }
     .footer-main .collapse:not(.show)
     {
@@ -1844,6 +2086,357 @@ a
     }
     .footer-section .footer-main
     {
-        padding: 20% 5% 8% 5%;;
+        padding: 20% 5% 8% 5%;
+    }
+
+/* .footer-section .bottom-footer .newsletter-sec
+    {
+        justify-content: end;
+    } */
+    .footer-section .bottom-footer .newsletter-sec input
+    {
+        width: 200px;
+    }
+
+    .login-dropdown
+    {
+        top:40%;
+        right: 3%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px)
+{
+
+
+    .search-div
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+    }
+    .topnavbar
+    {
+        padding: 3% 5%;
+    }
+    .login-div .login-btn
+    {
+        font-size: 12px;
+        padding: 4px 20px;
+    }
+    .search-div input
+    {
+        font-size: 12px;
+    }
+    .search-btn p
+    {
+        font-size: 14px;
+    }
+    .topnavbar .logo-main
+    {
+        width: 50%;
+    }
+    .topnavbar .logo-main img
+    {
+        /* width: 90%; */
+    }
+    
+    .sub-navbar .auto-location p, .sub-navbar .auto-location i
+    {
+        font-size: 14px;
+    }
+    .sub-navbar .navbar
+    {
+        padding: 56t px 0;
+    }
+
+
+
+    .herosection
+    {
+        height:80vh;
+    }
+    .herosection .container
+    {
+        padding: 0 6%;
+    }
+    .herosection .right
+    {
+        padding: 20px;
+    }
+    .herosection .row
+    {
+        gap: 40px;
+    }
+    .herosection .left .banner-text
+    {
+        font-size: 32px;
+        text-align: center;
+    }
+    .herosection .left .main-para
+    {
+        padding: 0;
+    }
+
+    .main-para
+    {
+        font-size: 16px;
+        line-height: normal;
+    }
+    .main-head
+    {
+        font-size:26px;
+    }
+    .top-head
+    {
+        font-size: 16px;
+    }
+    .main-outline-btn
+    {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+    .main-fill-btn
+    {
+        font-size: 14px;
+    }
+    .main-fill-btn img,
+    .main-outline-btn img
+    {
+        display: none;
+    }
+
+
+    
+
+    .specialities-section
+    {
+        padding: 20% 0;
+    }
+    .specialities-section .container
+    {
+        /* padding: 0 20px; */
+    }
+    .specialities-section .bottom-sec
+    {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top:100px;
+        padding: 0 30px;
+    }
+    .specialities-section .bottom-sec .spe-items
+    {
+        gap:0px;
+        padding: 0 20px;
+    }
+    .specialities-section .bottom-sec .desc-div
+    {
+        gap: 15px;
+        padding: 10px 0 20px 0;
+    }
+    .specialities-section .main-fill-btn
+    {
+        padding:10px 30px;
+        font-size: 14px;
+    }
+    .specialities-section .bottom-sec h4
+    {
+        font-size: 20px;
+    }
+    .specialities-section .bottom-sec .icon-div
+    {
+        margin-top: -60px;
+    }
+    .specialities-section .main-outline-btn
+    {
+        font-size: 12px;
+        padding: 8px 30px;
+    }
+
+    .topsec
+    {
+        padding: 0 20px;
+    }
+
+
+
+
+    .benefits-sec
+    {
+        padding: 0 0 20% 0;
+    }
+    .benefits-sec .bottom-sec .img-sec
+    {
+        padding: 0;
+    }
+    .benefits-sec .bottom-sec .points
+    {
+        gap:10px;
+    }
+    .benefits-sec .bottom-sec .points h6
+    {
+        font-size: 16px;
+    }
+    .benefits-sec .bottom-sec .points p
+    {
+        font-size: 14px;
+    }
+    .benefits-sec .bottom-sec
+    {
+        padding: 0 30px;
+    }
+    .benefits-sec .bottom-sec .points .desc
+    {
+        gap: 0;
+    }
+    .benefits-sec .bottom-sec .tag-head p
+    {
+        font-size: 14px;
+    }
+    .benefits-sec .bottom-sec .main-outline-btn   
+    {
+        padding: 10px 30px;
+    }
+    
+
+
+
+
+    .first-cta-section {
+        padding: 0 0 20% 0;
+    }
+    .first-cta-section .left img
+    {
+        display: none;
+    }
+    .first-cta-section .container
+    {
+        padding: 0;
+    }
+    .first-cta-section .main-bg
+    {
+        border-radius: 0;
+        padding: 60px 30px;
+    }
+    .first-cta-section .main-head
+    {
+        text-align: center;
+        font-size: 24px;
+    }
+    .first-cta-section .main-head br
+    {
+        display: none;
+    }
+    .first-cta-section .right
+    {
+        align-items: center;
+    }
+
+
+
+
+
+
+    .doctors-section .topsec .main-para
+    {
+        width: 100%;
+    }
+    .doctors-section .topsec
+    {
+        /* padding: 0 10px; */
+    }
+    .doctors-section .card-img .recomment
+    {
+        font-size: 12px;
+    }
+    .doctors-section .card-desc h6
+    {
+        font-size: 18px;
+    }
+    .doctors-section .card-desc .designation
+    {
+        font-size: 14px;
+    }
+    .doctors-section .card-desc .available p
+    {
+        font-size: 14px;
+    }
+    .doctors-section .card-desc .main-fill-btn
+    {
+        padding: 8px 20px;
+    }
+    .doctors-section .desc-bottom img
+    {
+        width: 14px !important;
+    }
+    .doctors-section .main-outline-btn
+    {
+        /* padding: 1px 20px; */
+    }
+    .doctors-section .owl-nav
+    {
+        gap:10px;
+    }
+    .doctors-section .owl-nav .owl-prev,
+    .doctors-section .owl-nav .owl-next
+    {
+        background-size: 40px !important;
+    }
+
+
+
+
+
+
+
+    .tesimonial-section .testi-items
+    {
+        padding: 20px;
+        height: 320px;
+    }
+    .tesimonial-section .owl-nav .owl-prev,
+    .tesimonial-section .owl-nav .owl-next
+    {
+        background-size: 40px !important;
+    }
+
+
+
+
+
+
+
+
+    .whychoose-section .whychoose-items {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .whychoose-section .whychoose-items .items h6
+    {
+        font-size: 18px;
+    }
+    .whychoose-section .whychoose-items .items
+    {
+        padding: 30px 20px;
+    }
+
+
+
+
+
+    .footer-main .collapse:not(.show)
+    {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 380px)
+{
+    .topnavbar .logo-main img
+    {
+        /* width: 80%; */
+    }
+    .herosection .left .banner-text
+    {
+        font-size: 28px;
     }
 }

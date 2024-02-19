@@ -32,13 +32,13 @@
   <!-- TOP NAVBAR -->
   <div class="topnavbar">
 
-    <div class="logo-main order-md-1 order-lg-1">
+    <div class="logo-main order-1 order-md-1 order-lg-1">
       <a href="#">
         <img src="assets/img//logo/mycarepedia-logo.png" alt="" class="img-fluid">
       </a>
     </div>
 
-    <div class="search-div order-md-3 order-lg-2 my-md-2">
+    <div class="search-div order-3 order-md-3 order-lg-2 my-md-2">
       <input type="text" placeholder="Doctors" class="">
       <input type="text" placeholder="Specialities" class="">
       <input type="text" placeholder="Insurance" class="">
@@ -51,7 +51,7 @@
 
     </div>
 
-    <div class="login-div order-md-2 order-lg-3">
+    <div class="login-div order-2 order-md-2 order-lg-3">
       <a href="#" class="login-btn">Log In/Sign Up</a>
       <div class="login-dropdown d-none">
         <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
@@ -95,11 +95,57 @@
           <i class="fa-solid fa-location-dot"></i>
           <p>Washington DC</p>
         </div>
-        <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler order-2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <span class="navbar-toggler-icon">
+            <img src="assets/img/svg/breadcrumbs.svg" alt="" class="img-fluid">
+          </span>
         </button>
+
+        <div class="offcanvas offcanvas-start d-lg-none d-md-block" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <a href="#">
+              <img src="assets/img//logo/mycarepedia-logo.png" alt="" class="img-fluid">
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Patient Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join a Televisit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">List Your Practice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+          </ul>
+        </div>
+
         <div class="collapse navbar-collapse order-3 justify-content-end" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -601,7 +647,7 @@
   <!-- HEROSECTION -->
   <div class="herosection">
     <div class="container">
-      <div class="row">
+      <div class="row flex-lg-row flex-md-column-reverse flex-column-reverse">
         <div class="col-lg-6 col-md-12 left">
           <img src="assets/img/logo/banner-logo.png" alt="" class="img-fluid">
           <h1 class="banner-text">Your Health <span class="scndry-text">Simplified</span></h1>
@@ -695,7 +741,7 @@
       </div>
       <div class="btn-sec">
         <a href="" class="main-fill-btn">
-          <p>Explore Out Specialities</p>
+          <p>Explore Our Specialities</p>
           <img src="assets/img/svg/btn-arrow.svg" alt="">
         </a>
       </div>
@@ -722,7 +768,7 @@
             <div class="col-md-12 col-lg-6 img-sec">
               <img src="assets/img/patients.png" alt="" class="img-fluid">
             </div>
-            <div class="col-md-12 col-lg-6 details-sec ps-5">
+            <div class="col-md-12 col-lg-6 details-sec ps-md-5 ps-0">
               <div class="tag-head">
                 <p>For Patients</p>
               </div>
@@ -778,9 +824,9 @@
             <div class="col-md-12 col-lg-6 img-sec">
               <img src="assets/img/doctors.png" alt="" class="img-fluid">
             </div>
-            <div class="col-md-12 col-lg-6 details-sec">
+            <div class="col-md-12 col-lg-6 details-sec ps-0">
               <div class="tag-head">
-                <p>For Patients</p>
+                <p>For Providers</p>
               </div>
               <div class="point-list">
 
@@ -846,10 +892,10 @@
     <div class="container">
       <div class="main-bg">
         <div class="row">
-          <div class="col-md-12 col-lg-6 left">
+          <div class="col-12 col-md-5 col-lg-6 left">
             <img src="assets/img/cta-doc.png" alt="" class="img-fluid">
           </div>
-          <div class="col-md-12 col-lg-6 right">
+          <div class="col-12 col-md-7 col-lg-6 right">
             <h2 class="main-head">Attract new patients and<br> build your online reputation</h2>
             <a href="" class="main-fill-btn">
               <p>Try MyCarePedia Now</p>
@@ -874,8 +920,8 @@
     <div class="container">
       <div class="topsec">
         <h6 class="top-head">Featured Doctors</h6>
-        <h2 class="main-head">Find Your Health Match Today</h2>
-        <p class="main-para w-50">Find your ideal doctor effortlessly on MyCarePedia's Featured Doctors section for
+        <h2 class="main-head">Find Your Health <br class="d-block d-md-none"> Match Today</h2>
+        <p class="main-para">Find your ideal doctor effortlessly on MyCarePedia's Featured Doctors section for
           top-rated
           and new healthcare professionals.</p>
       </div>
@@ -964,7 +1010,7 @@
             <div class="card-img">
               <img src="assets/img/doctor-3.jpg" alt="" class="img-fluid">
               <div class="recomment">
-                <p>Highly Recomment</p>
+                <p>Highly Recommend</p>
               </div>
             </div>
             <div class="card-desc">
@@ -1117,8 +1163,8 @@
     <div class="container">
       <div class="topsec">
         <h6 class="top-head">What Makes Us Unique</h6>
-        <h2 class="main-head">MyCarePedia: Your Family’s Health Heaven</h2>
-        <p class="main-para w-75">MyCarePedia isn't just a doctor's portal; it's a comprehensive healthcare hub designed
+        <h2 class="main-head">MyCarePedia: Your Family’s <br class="d-md-block d-lg-none">Health Heaven</h2>
+        <p class="main-para">MyCarePedia isn't just a doctor's portal; it's a comprehensive healthcare hub designed
           to simplify life for everyone in the family. Whether you're managing your child's well-being or navigating
           your own health journey, MyCarePedia offers unique features and benefits that make a real difference:
         </p>
@@ -1209,7 +1255,8 @@
     <div class="container">
       <div class="col-lg-6 col-12 left">
         <h2 class="main-head">Experience The<br>MyCarePedia Difference!</h2>
-        <p class="main-para">At MyCarePedia, we're passionate about making healthcare<br>easier and more accessible.</p>
+        <p class="main-para">At MyCarePedia, we're passionate about making <br>healthcare easier and more accessible.
+        </p>
         <a href="" class="main-fill-btn">
           <p>SignUp For Free</p>
           <img src="assets/img/svg/btn-arrow.svg" alt="">
@@ -1357,22 +1404,24 @@
   <!-- FOOTER SECTION -->
   <div class="footer-section">
     <div class="container">
+
       <div class="footer-cta">
         <div class="row">
-          <div class="col-md-6 col-12 left">
-            <h2 class="main-head">Experience The Future <br>Of Healthcare</h2>
+          <div class="col-lg-6 col-md-7 col-12 left">
+            <h2 class="main-head">Experience The Future <br class="d-lg-block d-md-none">Of Healthcare</h2>
             <a href="" class="main-fill-btn">
               <p>SignUp For Now</p>
               <img src="assets/img/svg/btn-arrow.svg" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-12 right">
+          <div class="col-lg-6 col-md-5 col-12 right">
             <div class="img-div">
-              <img src="assets/img/footer-cta-img.png" alt="" class="img-fluid">
+              <img src="assets/img/footer-cta-img.png" alt="" class="img-fluid footer-cta-img">
             </div>
           </div>
         </div>
       </div>
+
     </div>
     <div class="footer-main">
       <div class="container">
@@ -1577,17 +1626,19 @@
 
     <div class="bottom-footer">
       <div class="container">
-        <div class="main">
-          <a href="#" class="logo-section">
+        <div class="main row">
+          <a href="#" class="logo-section col-md-6 col-12">
             <img src="assets/img/logo/mycarepedia-footer-logo.png" alt="" class="img-fluid">
           </a>
-          <div class="newsletter-sec">
-            <h4>Join Our Newsletter</h4>
-            <div class="input-div">
-              <input type="mail" placeholder="Enter Email Address">
-              <a href="" class="newsletter-submit">
-                <i class="fa-solid fa-paper-plane"></i>
-              </a>
+          <div class="newsletter-sec col-md-6 col-12">
+            <div class="newsletter-div">
+              <h4>Join Our Newsletter</h4>
+              <div class="input-div">
+                <input type="mail" placeholder="Enter Email Address">
+                <a href="" class="newsletter-submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
