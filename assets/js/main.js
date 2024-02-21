@@ -176,15 +176,15 @@ SearchBtn.addEventListener("click", function(){
 
 
 
+
+
 // SEARCH RESULT SLIDER
 $(document).ready(function(){
     $('.search-results-main').owlCarousel({
-        margin: 20, // Adjust margin if needed
-        loop: true,
+        margin: 20,
+        loop: false,
         nav:true,
         dots:false,
-        // autoplay: true,
-        // autoplayTimeout: 5000, // Adjust autoplay timeout if needed
         responsive:{
             0:{
                 items:1
@@ -195,6 +195,28 @@ $(document).ready(function(){
             1000:{
                 items:1
             }
-        }
+        },
+        onInitialized: checkNavButtons, // Check navigation buttons initially
+        onTranslated: checkNavButtons // Check navigation buttons after translation
     });
+
+    function checkNavButtons(event){
+        var owl = event.relatedTarget;
+        var $prevButton = $(owl.options.navContainer).find('.owl-prev');
+        var $nextButton = $(owl.options.navContainer).find('.owl-next');
+
+        // Check if first slide is active
+        if(owl.current() === 0){
+            $prevButton.addClass('disabled');
+        } else {
+            $prevButton.removeClass('disabled');
+        }
+
+        // Check if last slide is active
+        if(owl.current() === owl.maximum()){
+            $nextButton.addClass('disabled');
+        } else {
+            $nextButton.removeClass('disabled');
+        }
+    }
 });
