@@ -1620,6 +1620,7 @@ a
     font-size: 18px;
     font-weight: 700; 
     width: 90%;   
+    text-transform: capitalize;
 }
 .searchresult-sec .search-main .rating-sec
 {
@@ -2422,7 +2423,7 @@ a
 
     .whychoose-section
     {
-        padding: 0 0 20% 0;
+        padding:20% 0;
     }
     .whychoose-section .whychoose-items {
         grid-template-columns: repeat(1, 1fr) !important;
@@ -2571,15 +2572,18 @@ a
 
 
 
-
+    .searchresult-sec
+    {
+        padding: 5% 3% 8%;
+    }
     .searchresult-sec .search-main .results-sec
     {
         grid-template-columns:repeat(2, 1fr);
-        gap:100px 5px;
+        gap:70px 5px;
     }
     .searchresult-sec .search-main .name-sec h4
     {
-        font-size: 14px;
+        font-size: 12px;
     }
     .searchresult-sec .search-main .img-sec img
     {
@@ -2587,7 +2591,75 @@ a
         width: 72px !important;
         height: 72px !important;
     }
-
+    .searchresult-sec .topsec .main-head
+    {
+        font-size: 20px !important;
+    }
+    .searchresult-sec .topsec .main-head img
+    {
+        width: 20px;
+        /* height: 16px; */
+    }
+    .searchresult-sec .search-main
+    {
+        margin-top: 10px;
+    }
+    .searchresult-sec .search-main .name-sec p
+    {
+        font-size: 12px;
+    }
+    .searchresult-sec .search-main .result-doctors
+    {
+        border-radius:10px;
+    }
+    .searchresult-sec .doc-desc p
+    {
+        font-size: 10px;
+    }
+    .searchresult-sec .search-main .rating-sec .rating
+    {
+        font-size: 12px;
+        margin: 0 10px 0 5px
+    }
+    .searchresult-sec .search-main .rating-sec
+    {
+        align-items: center;
+    }
+    .searchresult-sec .search-main .rating-sec img
+    {
+        width: 14px;
+    }
+    .searchresult-sec .search-main .rating-sec .review
+    {
+        font-size: 12px;
+    }
+    .searchresult-sec .main-fill-btn
+    {
+        font-size: 10px;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+    .searchresult-sec .search-main .recommend-sec
+    {
+        font-size: 6px;
+        padding: 5px 10px;
+    }
+    .searchresult-sec .search-main .result-doctors
+    {
+        padding: 8px;
+    }
+    .searchresult-sec .available-sec img
+    {   
+        width: 14px !important;
+    }
+    .searchresult-sec .available-sec p
+    {
+        font-size: 12px;
+    }
+    .searchresult-sec .available-sec
+    {
+        gap:5px;
+    }
 
 
 
