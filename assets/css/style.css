@@ -1530,6 +1530,10 @@ a
 {
     font-size: 16px;
 }
+.footer-section .copyright-sec .mobile
+{
+    display: none;
+}
 
 
 
@@ -2562,9 +2566,6 @@ a
     {
         display: block;
         margin:10px 0 20px 0;
-    }
-    .footer-section .copyright-sec
-    {
     }
 
 
