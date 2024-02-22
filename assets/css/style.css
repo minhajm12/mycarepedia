@@ -2122,6 +2122,18 @@ a
         top:40%;
         right: 3%;
     }
+
+
+    .searchresult-sec .topsec
+    {
+        margin-top: 30px;
+    }
+    .searchresult-sec .right-ad
+    {
+        display: flex;
+        justify-content: center;
+        margin-top:100px;
+    }
 }
 
 
@@ -2129,6 +2141,19 @@ a
 @media only screen and (max-width: 768px)
 {
 
+
+    .login-dropdown
+    {
+        top:30%
+    }
+    .login-dropdown .nav-item button
+    {
+        font-size: 14px;
+    }
+    .login-dropdown .login-signup .btn
+    {
+        font-size: 14px;
+    }
 
     .search-div
     {
@@ -2336,6 +2361,7 @@ a
     {
         border-radius: 0;
         padding: 60px 30px;
+        background-blend-mode: darken;
     }
     .first-cta-section .main-head
     {
@@ -2401,6 +2427,11 @@ a
     {
         background-size: 40px !important;
     }
+    .doctors-section .owl-nav .owl-prev:hover,
+    .doctors-section .owl-nav .owl-next:hover
+    {
+        background-size: 40px !important;
+    }
 
 
 
@@ -2415,6 +2446,11 @@ a
     }
     .tesimonial-section .owl-nav .owl-prev,
     .tesimonial-section .owl-nav .owl-next
+    {
+        background-size: 40px !important;
+    }
+    .tesimonial-section .owl-nav .owl-prev:hover,
+    .tesimonial-section .owl-nav .owl-next:hover
     {
         background-size: 40px !important;
     }
@@ -2661,6 +2697,10 @@ a
     {
         gap:5px;
     }
+    .searchresult-sec .right-ad
+    {
+        margin-top: 100px;
+    }
 
 
 
@@ -2683,4 +2723,41 @@ a
     {
         font-size: 28px;
     }
+
+
+    .searchresult-sec .search-main .img-sec img
+    {
+        width: 60px !important;
+        height: 60px !important;
+        margin-top: -40px;
+    }
+    .searchresult-sec .available, .searchresult-sec .unavailable
+    {
+        margin-bottom: 0 !important;
+        gap: 5px;
+    }
+    .searchresult-sec .search-main .rating-sec .review
+    {
+        font-size: 12px;
+    }
+
+    .herosection
+    {
+        height: 90vh !important;
+    }
+
+    .first-cta-section .main-bg
+    {
+        padding: 35px 30px;
+    }
+
+    .footer-section .copyright .main-para,
+    .footer-section .copyright .sitemap-details a
+    {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    
 }
+
