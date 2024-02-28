@@ -1671,6 +1671,11 @@ a
     color: #B0B0B0;
     font-weight: 500;
 }
+.searchresult-sec .right-ad
+{
+    display: flex;
+    align-items: end;
+}
 .searchresult-sec .right-ad img
 {
     border-radius: 20px;
@@ -1888,6 +1893,10 @@ a
     .searchresult-sec .search-main .results-sec
     {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .searchresult-sec .right-ad
+    {
+        align-items: center;
     }
 
 
