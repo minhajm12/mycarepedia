@@ -187,11 +187,13 @@ a
     padding:5px 10px;
     outline: none;
     color: var(--maincolor);
+    width: 300px;
 }
 .search-div input::placeholder
 {
     color: var(--maincolor);
     font-size: 14px;
+    opacity: .5;
 }
 .search-div .search-btn
 {
@@ -1802,7 +1804,7 @@ a
     
     .search-div input
     {
-        width: 170px;
+        width: 250px;
     }
     .sub-navbar .navbar-nav
     {
@@ -1874,6 +1876,10 @@ a
     .search-div input
     {
         width: 100%;
+    }
+    .search-div input::placeholder
+    {
+        font-size: 12px;
     }
     .search-btn
     {

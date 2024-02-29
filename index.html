@@ -55,7 +55,7 @@
       <input type="text" placeholder="Speciality, Condition, Procedure, Doctors" class="">
       <!-- <input type="text" placeholder="Specialities" class=""> -->
       <input type="text" placeholder="Health Insurance & Plan" class="">
-      <input type="text" placeholder="City, State, Zip-Code" class="">
+      <input type="text" placeholder="City, State, Zip Code" class="">
       <!-- <input type="text" placeholder="language" class=""> -->
       <a href="#" class="search-btn" class="col-lg-2 ">
         <img src="assets/img/svg/search-icon.svg" alt="">
@@ -63,6 +63,48 @@
       </a>
 
     </div>
+
+
+
+    
+
+    <!-- <script>
+      // Function to adjust input widths based on placeholder text
+      function adjustInputWidths() {
+            // Get all input elements
+            var inputs = document.getElementsByTagName("input");
+            
+            // Loop through each input element
+            for (var i = 0; i < inputs.length; i++) {
+                var input = inputs[i];
+                
+                // Get the placeholder text
+                var placeholderText = input.getAttribute("placeholder");
+                
+                // Create a temporary span element to measure the width of the placeholder text
+                var span = document.createElement("span");
+                span.style.visibility = "hidden";
+                span.style.position = "absolute";
+                span.style.whiteSpace = "pre";
+                span.style.font = window.getComputedStyle(input).font;
+                span.textContent = placeholderText;
+                document.body.appendChild(span);
+                
+                // Set the input width based on the width of the placeholder text
+                input.style.width = span.offsetWidth + "px";
+                
+                // Remove the temporary span element
+                document.body.removeChild(span);
+            }
+        }
+        
+        // Call the adjustInputWidths function when the page loads
+        window.onload = adjustInputWidths;
+    </script> -->
+
+
+
+
 
     <div class="login-div order-2 order-md-2 order-lg-3">
       <a href="#" class="login-btn">Log In/Sign Up</a>
