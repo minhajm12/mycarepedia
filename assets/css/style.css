@@ -331,6 +331,11 @@ a
     color: #fff !important;
     margin: 0;
 }
+.sub-navbar .auto-location p
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
 /* .sub-navbar .main-navbar
 {
     display: flex;
@@ -2184,7 +2189,7 @@ a
 
 
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 600px)
 {
 
 
@@ -2245,7 +2250,7 @@ a
 
     .herosection
     {
-        height:80vh;
+        height:70vh;
     }
     .herosection .container
     {
@@ -2257,7 +2262,7 @@ a
     }
     .herosection .row
     {
-        gap: 40px;
+        gap: 20px;
     }
     .herosection .left .banner-text
     {
