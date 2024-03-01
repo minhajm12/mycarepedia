@@ -187,7 +187,18 @@ a
     padding:5px 10px;
     outline: none;
     color: var(--maincolor);
-    width: 300px;
+}
+.search-div input.speciality
+{
+    width: 320px;
+}
+.search-div input.insurance
+{
+    width: 280px;
+}
+.search-div input.zip-code
+{
+    width: 220px;
 }
 .search-div input::placeholder
 {
@@ -1802,9 +1813,25 @@ a
     }
 
     
-    .search-div input
+    /* .search-div input
     {
         width: 250px;
+    } */
+    .search-div input.speciality
+    {
+        width: 320px;
+    }
+    .search-div input.insurance
+    {
+        width: 280px;
+    }
+    .search-div input.zip-code
+    {
+        width: 220px;
+    }
+    .search-div input::placeholder
+    {
+        /* font-size: 12px; */
     }
     .sub-navbar .navbar-nav
     {
@@ -1870,16 +1897,20 @@ a
     .search-div
     {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
     .search-div input
     {
-        width: 100%;
+        width: 100% !important;
     }
     .search-div input::placeholder
     {
         font-size: 12px;
+    }
+    .herosection .right
+    {
+        padding: 0 80px 80px;
     }
     .search-btn
     {
@@ -2172,7 +2203,7 @@ a
 
     .search-div
     {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 10px;
     }
     .topnavbar
