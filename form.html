@@ -273,14 +273,16 @@
                                         <div class="col-lg-4 col-md-12 col-12 mt-lg-0 mt-md-3 mt-0">
                                             <div class="input-div">
                                                 <p class="label">Preferred Communication</p>
-                                                <div class="radio-div">
+                                                <div class="checkbox-div">
                                                     <div>
-                                                        <p class="innerlabel">Yes</p>
-                                                        <input type="radio" id="yes" name="answer" value="yes">
+                                                        <p class="innerlabel">Email</p>
+                                                        <input type="checkbox" id="email-check" name="email-check"
+                                                            value="email-check">
                                                     </div>
                                                     <div>
-                                                        <p class="innerlabel">No</p>
-                                                        <input type="radio" id="no" name="answer" value="no">
+                                                        <p class="innerlabel">Phone</p>
+                                                        <input type="checkbox" id="phone-check" name="phone-check"
+                                                            value="phone-check">
                                                     </div>
                                                 </div>
                                             </div>
@@ -355,12 +357,7 @@
                                         <div class="col-lg-4 col-md-6 col-12">
                                             <div class="input-div">
                                                 <p class="label">Insurance Career Name</p>
-                                                <select id="insurance-career" name="insurance-career">
-                                                    <option value="option1">Option 1</option>
-                                                    <option value="option2">Option 2</option>
-                                                    <option value="option3">Option 3</option>
-                                                    <option value="option4">Option 4</option>
-                                                </select>
+                                                phone-check
                                             </div>
                                         </div>
 
@@ -372,7 +369,7 @@
                                 <div class="form-groups" id="not-insured">
 
                                     <div class="row">
-                                        <h3 class="group-title">If Not Insured,</h3>
+                                        <h3 class="group-title">Are you the Insured?</h3>
                                         <div class="col-lg-4 col-md-4 col-12">
                                             <div class="input-div">
                                                 <p class="label">First Name</p>
@@ -471,7 +468,8 @@
                                             <div class="input-div">
                                                 <p class="label">Insurance ID</p>
                                                 <div class="upload">
-                                                    <label for="" class="upload-resume">Upload File <i class="fa-solid fa-link"></i></label>
+                                                    <label for="" class="upload-resume">Upload File <i
+                                                            class="fa-solid fa-link"></i></label>
                                                     <input type="file" id="" name="" accept="application/pdf"
                                                         style="border:none;z-index:2;opacity:0;">
                                                 </div>
@@ -481,7 +479,8 @@
                                             <div class="input-div">
                                                 <p class="label">Insured ID/ State ID (or drivers license)</p>
                                                 <div class="upload">
-                                                    <label for="" class="upload-resume">Upload File <i class="fa-solid fa-link"></i></label>
+                                                    <label for="" class="upload-resume">Upload File <i
+                                                            class="fa-solid fa-link"></i></label>
                                                     <input type="file" id="" name="" accept="application/pdf"
                                                         style="border:none;z-index:2;opacity:0;">
                                                 </div>
@@ -513,7 +512,12 @@
                                         <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
                                             <div class="input-div">
                                                 <p class="label">State</p>
-                                                <input type="text" placeholder="Select State">
+                                                <select id="insurance-career" name="insurance-career">
+                                                    <option value="option1">-Select State-</option>
+                                                    <option value="option2">Option 2</option>
+                                                    <option value="option3">Option 3</option>
+                                                    <option value="option4">Option 4</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
@@ -583,8 +587,7 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12 col-12">
                                             <div class="input-div">
-                                                <p class="label">Is the address the same as the Insurance Carrier’s
-                                                    address?</p>
+                                                <p class="label">Is the address the same as the Insured's address?</p>
                                                 <div class="radio-div">
                                                     <div>
                                                         <p class="innerlabel">Yes</p>
@@ -617,7 +620,12 @@
                                         <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
                                             <div class="input-div">
                                                 <p class="label">State</p>
-                                                <input type="text" placeholder="Select State">
+                                                <select id="insurance-career" name="insurance-career">
+                                                    <option value="option1">-Select State-</option>
+                                                    <option value="option2">Option 2</option>
+                                                    <option value="option3">Option 3</option>
+                                                    <option value="option4">Option 4</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">

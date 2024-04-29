@@ -3036,7 +3036,7 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     .reg-form-sec .form-section
     {
-        padding: 30px;
+        padding: 50px 30px;
     }
     .reg-form-sec .form-section .form-groups h3
     {
@@ -3059,5 +3059,10 @@ input[type="number"]::-webkit-outer-spin-button {
     {
         color: #04285b4a;
         font-size: 14px;
+    }
+    .reg-form-sec .form-section form button
+    {
+        width: 100%;
+        font-size: 18px;
     }
 }
