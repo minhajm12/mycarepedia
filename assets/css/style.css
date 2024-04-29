@@ -2997,3 +2997,54 @@ input[type="number"]::-webkit-outer-spin-button {
 {
     border-radius: 20px;
 }
+
+
+
+
+
+@media only screen and (max-width: 992px)
+{
+    .reg-form-sec .form-section form
+    {
+        margin-top: 40px;
+    }
+    .reg-form-sec .form-section
+    {
+        padding: 20px 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px)
+{
+    .reg-form-sec .form-groups .row
+    {
+        gap:10px;
+    }
+    .reg-form-sec .form-section
+    {
+        padding: 30px;
+    }
+    .reg-form-sec .form-section .form-groups h3
+    {
+        font-size: 18px;
+    }
+    .reg-form-sec .form-section .form-groups
+    {
+        gap:10px;
+    }
+    .reg-form-sec .form-section form
+    {
+        gap: 60px;
+    }
+
+    .reg-form-sec .input-div .label
+    {
+        font-size: 16px;
+    }
+    .reg-form-sec .input-div input::placeholder
+    {
+        color: #04285b4a;
+        font-size: 14px;
+    }
+}
