@@ -2945,7 +2945,7 @@ a
 {
     border: 1px solid var(--maincolor);
     background:#F4F9FF;
-    padding:5px 20px;
+    padding:5px 10px;
     border-radius: 5px;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -2972,6 +2972,12 @@ input[type="number"]::-webkit-outer-spin-button {
     border-radius: 5px;
     font-size: 14px;
     padding: 2px 70px;
+    gap:20px;
+}
+.reg-form-sec .form-section form .button
+{
+    display: flex;
+    justify-content: center;
 }
 .reg-form-sec .form-section form button
 {
@@ -2982,6 +2988,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 20px;
     padding: 10px 0;
     border-radius: 5px;
+    width: 50%;
 }
 
 
@@ -3001,7 +3008,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-
+@media screen and (max-width: 1536px)
+{
+    .reg-form-sec .input-div .label
+    {
+        font-size: 14px !important;
+    }
+}
 @media only screen and (max-width: 992px)
 {
     .reg-form-sec .form-section form
