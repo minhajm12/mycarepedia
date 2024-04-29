@@ -2812,3 +2812,188 @@ a
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGISTRATION FORM SECTION */
+.reg-form-sec
+{
+    padding:2% 5% 6%;
+}
+.reg-form-sec .left
+{
+    /* padding-right: 60px; */
+}
+.reg-form-sec .topsec .main-head
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.reg-form-sec .form-main
+{
+    margin-top:40px;
+}
+.reg-form-sec .form-main .form-section
+{
+    border: 1px solid var(--maincolor);
+    border-radius: 20px;
+}
+.reg-form-sec .form-section
+{
+    padding: 40px 80px;
+}
+.reg-form-sec .form-section form
+{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+.reg-form-sec .form-section .form-groups
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.reg-form-sec .form-section .form-groups h3
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+.reg-form-sec .input-div
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.reg-form-sec .input-div .label
+{
+    font-weight: 600;
+}
+.reg-form-sec .input-div .innerlabel
+{
+    font-weight: 400 !important;
+}
+.reg-form-sec .input-div input
+{
+    border: 1px solid var(--maincolor);
+    background:#F4F9FF;
+    padding:5px 14px;
+    border-radius: 5px;
+}
+.reg-form-sec .input-div input::placeholder
+{
+    color: #04285b4a;
+    /* font-size: 14px; */
+}
+.reg-form-sec .input-div .radio-div
+{
+    display: flex;
+    gap:20px;
+    padding: 5px 0px;
+}
+.reg-form-sec .input-div div
+{
+    width: fit-content;
+    display: flex;
+    gap:10px;
+}
+.reg-form-sec .input-div input[type="date"]
+{
+    /* color: #00000010; */
+}
+.reg-form-sec .input-div select
+{
+    border: 1px solid var(--maincolor);
+    background:#F4F9FF;
+    padding:5px 20px;
+    border-radius: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.reg-form-sec .input-div .upload
+{
+    position: relative;
+    width: 100%;
+}
+.reg-form-sec .input-div .upload-resume
+{
+    position: absolute;
+    width:100%;
+    background: transparent;
+    border: 1px solid var(--maincolor);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 2px 70px;
+}
+.reg-form-sec .form-section form button
+{
+    background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
+    border: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+
+
+
+
+.reg-form-sec .right-ad
+{
+    display: flex;
+    align-items: start;
+}
+.reg-form-sec .right-ad img
+{
+    border-radius: 20px;
+}
