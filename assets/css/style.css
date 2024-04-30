@@ -3091,6 +3091,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .modal-content .form-main .form-section
 {
     position: relative;
+    border: none;
 }
 .modal-content .form-main .form-section .btn-close
 {
