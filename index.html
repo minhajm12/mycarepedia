@@ -66,7 +66,7 @@
 
 
 
-    
+
 
     <!-- <script>
       // Function to adjust input widths based on placeholder text
@@ -302,7 +302,8 @@
                     <p>Available Today</p>
                   </div>
                 </div>
-                <a href="" class="main-fill-btn">Schedule Appoinment</a>
+                <a href="" class="main-fill-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Schedule
+                  Appoinment</a>
               </div>
               <div class="result-doctors">
                 <div class="img-sec">
@@ -890,6 +891,428 @@
     </div>
   </div>
 
+
+  <!-- MODAL SECTION -->
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centere">
+      <div class="modal-content">
+
+        <div class="form-main">
+          <div class="row">
+            <div class="col-lg-12 col-12 left">
+              <div class="form-section">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="topsec">
+                  <h2 class="main-head">
+                    <img src="assets/img/svg/search-doctors.svg" alt="" class="img-fluid">
+                    Registration Form
+                  </h2>
+                </div>
+                <form action="">
+
+                  <div class="form-groups">
+
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Registering Email ID</p>
+                          <input type="email" placeholder="Enter Email ID">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Registering Phone Number</p>
+                          <input type="phone" placeholder="Enter Phone Number">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-12 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">Preferred Communication</p>
+                          <div class="checkbox-div">
+                            <div>
+                              <p class="innerlabel">Email</p>
+                              <input type="checkbox" id="email-check" name="email-check" value="email-check">
+                            </div>
+                            <div>
+                              <p class="innerlabel">Phone</p>
+                              <input type="checkbox" id="phone-check" name="phone-check" value="phone-check">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">First Name</p>
+                          <input type="email" placeholder="Enter First Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Middle Name</p>
+                          <input type="phone" placeholder="Enter Middle Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Last Name</p>
+                          <input type="phone" placeholder="Enter Last Name">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Gender</p>
+                          <div class="radio-div">
+                            <div>
+                              <p class="innerlabel">Male</p>
+                              <input type="radio" id="male" name="answer" value="male">
+                            </div>
+                            <div>
+                              <p class="innerlabel">Female</p>
+                              <input type="radio" id="female" name="answer" value="female">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">D.O.B</p>
+                          <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Are You Insured?</p>
+                          <div class="radio-div">
+                            <div>
+                              <p class="innerlabel">Yes</p>
+                              <input type="radio" id="insuredyes" name="answer" value="yes">
+                            </div>
+                            <div>
+                              <p class="innerlabel">No</p>
+                              <input type="radio" id="insuredno" name="answer" value="no">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <!-- <div class="row">
+
+
+                                  <div class="col-lg-4 col-md-6 col-12">
+                                      <div class="input-div">
+                                          <p class="label">Insurance carrier Name</p>
+                                          phone-check
+                                      </div>
+                                  </div>
+
+                              </div> -->
+
+
+                  </div>
+
+                  <div class="form-groups" id="not-insured">
+
+                    <div class="row">
+                      <h3 class="group-title">If you are not the Insured..</h3>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">First Name</p>
+                          <input type="email" placeholder="Enter First Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Middle Name</p>
+                          <input type="phone" placeholder="Enter Middle Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Last Name</p>
+                          <input type="phone" placeholder="Enter Last Name">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Gender</p>
+                          <div class="radio-div">
+                            <div>
+                              <p class="innerlabel">Male</p>
+                              <input type="radio" id="not-insure-male" name="answer" value="male">
+                            </div>
+                            <div>
+                              <p class="innerlabel">Female</p>
+                              <input type="radio" id="not-insure-female" name="answer" value="female">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">D.O.B</p>
+                          <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy">
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="form-groups" id="insurance-details">
+
+                    <div class="row">
+                      <h3 class="group-title">Insurance Details</h3>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Insurance Carrier Name</p>
+                          <select id="insurance-carrier" name="insurance-carrier">
+                            <option value="option1" disabled selected>-Select Option-</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Insurance Plan</p>
+                          <select id="insurance-carrier" name="insurance-carrier">
+                            <option value="option1" disabled selected>-Selelct Insurance Plan-
+                            </option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Insurance Member ID</p>
+                          <input type="phone" placeholder="Enter Member ID">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Insurance Group ID</p>
+                          <input type="number" placeholder="Enter Insurance Group ID">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Insurance ID</p>
+                          <div class="upload">
+                            <label for="" class="upload-resume">Upload File <i class="fa-solid fa-link"></i></label>
+                            <input type="file" id="" name="" accept="application/pdf"
+                              style="border:none;z-index:2;opacity:0;">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">Insured ID/ State ID (or drivers license)</p>
+                          <div class="upload">
+                            <label for="" class="upload-resume">Upload File <i class="fa-solid fa-link"></i></label>
+                            <input type="file" id="" name="" accept="application/pdf"
+                              style="border:none;z-index:2;opacity:0;">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="form-groups" id="address">
+
+                    <div class="row">
+                      <h3 class="group-title">Address</h3>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Insured Address</p>
+                          <input type="text" placeholder="House Number, Street Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">City</p>
+                          <input type="text" placeholder="Select City">
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">State</p>
+                          <select id="insurance-carrier" name="insurance-carrier">
+                            <option value="option1" disabled selected>-Select State-</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">Zip Code</p>
+                          <input type="number" placeholder="Enter Zip Code">
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="form-groups" id="dependencies">
+
+                    <div class="row">
+                      <h3 class="group-title">Add Dependence</h3>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">First Name</p>
+                          <input type="email" placeholder="Enter First Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Middle Name</p>
+                          <input type="phone" placeholder="Enter Middle Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-12">
+                        <div class="input-div">
+                          <p class="label">Last Name</p>
+                          <input type="phone" placeholder="Enter Last Name">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Gender</p>
+                          <div class="radio-div">
+                            <div>
+                              <p class="innerlabel">Male</p>
+                              <input type="radio" id="not-insure-male" name="answer" value="male">
+                            </div>
+                            <div>
+                              <p class="innerlabel">Female</p>
+                              <input type="radio" id="not-insure-female" name="answer" value="female">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">D.O.B</p>
+                          <input type="text" id="dob" name="dob" placeholder="dd-mm-yyyy">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-6 col-md-12 col-12">
+                        <div class="input-div">
+                          <p class="label">Is the address the same as the Insured's address?</p>
+                          <div class="radio-div">
+                            <div>
+                              <p class="innerlabel">Yes</p>
+                              <input type="radio" id="same-address-yes" name="answer" value="yes">
+                            </div>
+                            <div>
+                              <p class="innerlabel">No</p>
+                              <input type="radio" id="same-address-no" name="answer" value="no">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <h3 class="group-title">Address</h3>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">Dependence Address</p>
+                          <input type="text" placeholder="House Number, Street Name">
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12">
+                        <div class="input-div">
+                          <p class="label">City</p>
+                          <input type="text" placeholder="Select City">
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">State</p>
+                          <select id="insurance-carrier" name="insurance-carrier">
+                            <option value="option1" disabled selected>-Select State-</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-12 mt-lg-0 mt-md-3 mt-0">
+                        <div class="input-div">
+                          <p class="label">Zip Code</p>
+                          <input type="phone" placeholder="Enter Zip Code">
+                        </div>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="button">
+                    <button type="submit">SUBMIT</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <!-- <div class="col-lg-3 col-12 right-ad">
+              <a href="">
+                <img src="assets/img/search-ad.jpg" alt="" class="img-fluid d-lg-block d-md-none d-none">
+                <img src="assets/img/gif/tablet-main.gif" alt="" class="img-fluid d-lg-none d-md-block d-none">
+                <img src="assets/img/gif/mobile-main.gif" alt="" class="img-fluid d-lg-none d-md-none d-block">
+              </a>
+            </div> -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 
 
 

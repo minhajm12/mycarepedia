@@ -2862,7 +2862,7 @@ a
 {
     /* padding-right: 60px; */
 }
-.form-main .topsec .main-head
+.reg-form-sec .topsec .main-head
 {
     display: flex;
     align-items: center;
@@ -2872,76 +2872,76 @@ a
 {
     margin-top:40px;
 }
-.form-main .form-section
+.reg-form-sec .form-main .form-section
 {
     border: 1px solid var(--maincolor);
     border-radius: 20px;
 }
-.form-main .form-section
+.reg-form-sec .form-section
 {
     padding: 40px 80px;
 }
-.form-main .form-section form
+.reg-form-sec .form-section form
 {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     gap:50px;
 }
-.form-main .form-section .form-groups
+.reg-form-sec .form-section .form-groups
 {
     display: flex;
     flex-direction: column;
     gap:20px;
 }
-.form-main .form-section .form-groups h3
+.reg-form-sec .form-section .form-groups h3
 {
     font-size: 22px;
     font-weight: 700;
 }
-.form-main .input-div
+.reg-form-sec .input-div
 {
     display: flex;
     flex-direction: column;
     gap:5px;
 }
-.form-main .input-div .label
+.reg-form-sec .input-div .label
 {
     font-weight: 600;
 }
-.form-main .input-div .innerlabel
+.reg-form-sec .input-div .innerlabel
 {
     font-weight: 400 !important;
 }
-.form-main .input-div input
+.reg-form-sec .input-div input
 {
     border: 1px solid var(--maincolor);
     background:#F4F9FF;
     padding:5px 14px;
     border-radius: 5px;
 }
-.form-main .input-div input::placeholder
+.reg-form-sec .input-div input::placeholder
 {
     color: #04285b4a;
     /* font-size: 14px; */
 }
-.form-main .input-div .radio-div
+.reg-form-sec .input-div .radio-div
 {
     display: flex;
     gap:20px;
     padding: 5px 0px;
 }
-.form-main .input-div div
+.reg-form-sec .input-div div
 {
     width: fit-content;
     display: flex;
     gap:10px;
 }
-.form-main .input-div input[type="date"]
+.reg-form-sec .input-div input[type="date"]
 {
     /* color: #00000010; */
 }
-.form-main .input-div select
+.reg-form-sec .input-div select
 {
     border: 1px solid var(--maincolor);
     background:#F4F9FF;
@@ -2954,12 +2954,12 @@ input[type="number"]::-webkit-outer-spin-button {
     appearance: none;
     margin: 0;
 }
-.form-main .input-div .upload
+.reg-form-sec .input-div .upload
 {
     position: relative;
     width: 100%;
 }
-.form-main .input-div .upload-resume
+.reg-form-sec .input-div .upload-resume
 {
     position: absolute;
     width:100%;
@@ -2974,12 +2974,12 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 2px 70px;
     gap:20px;
 }
-.form-main .form-section form .button
+.reg-form-sec .form-section form .button
 {
     display: flex;
     justify-content: center;
 }
-.form-main .form-section form button
+.reg-form-sec .form-section form button
 {
     background: linear-gradient(to right, var(--maincolor), var(--scndcolor));
     border: none;
@@ -2995,12 +2995,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-.form-main .right-ad
+.reg-form-sec .right-ad
 {
     display: flex;
     align-items: start;
 }
-.form-main .right-ad img
+.reg-form-sec .right-ad img
 {
     border-radius: 20px;
 }
@@ -3010,18 +3010,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 1536px)
 {
-    .form-main .input-div .label
+    .reg-form-sec .input-div .label
     {
         font-size: 14px !important;
     }
 }
 @media only screen and (max-width: 992px)
 {
-    .form-main .form-section form
+    .reg-form-sec .form-section form
     {
         margin-top: 40px;
     }
-    .form-main .form-section
+    .reg-form-sec .form-section
     {
         padding: 20px 40px;
     }
@@ -3030,105 +3030,39 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media only screen and (max-width: 768px)
 {
-    .form-main .form-groups .row
+    .reg-form-sec .form-groups .row
     {
         gap:10px;
     }
-    .form-main .form-section
+    .reg-form-sec .form-section
     {
         padding: 50px 30px;
     }
-    .form-main .form-section .form-groups h3
+    .reg-form-sec .form-section .form-groups h3
     {
         font-size: 18px;
     }
-    .form-main .form-section .form-groups
+    .reg-form-sec .form-section .form-groups
     {
         gap:10px;
     }
-    .form-main .form-section form
+    .reg-form-sec .form-section form
     {
         gap: 60px;
     }
 
-    .form-main .input-div .label
+    .reg-form-sec .input-div .label
     {
         font-size: 16px;
     }
-    .form-main .input-div input::placeholder
+    .reg-form-sec .input-div input::placeholder
     {
         color: #04285b4a;
         font-size: 14px;
     }
-    .form-main .form-section form button
+    .reg-form-sec .form-section form button
     {
         width: 100%;
         font-size: 18px;
-    }
-}
-
-
-
-
-
-
-.modal.show
-{
-    display: flex !important;
-    align-items: start;
-    justify-content: center;
-}
-.modal-content
-{
-    padding: 60px;
-    /* align-items: center; */
-    border-radius: 40px;
-}
-.modal-content .modal-header
-{
-    border-bottom: none;
-}
-.modal-content .form-main .form-section
-{
-    position: relative;
-}
-.modal-content .form-main .form-section .btn-close
-{
-    position: absolute;
-    right: 40px;
-    top:40px;
-    box-shadow: none;
-}
-.modal-dialog
-{
-    max-width: 90%;
-}
-.modal.show .modal-dialog
-{
-    max-width: 90%;
-}
-
-
-
-@media only screen and (max-width: 768px)
-{
-    .modal-content
-    {
-        padding: 20px 10px;
-        border-radius: 30px;
-    }
-    .modal-content .form-main .form-section
-    {
-        padding: 40px 20px;
-        border: none;
-    }
-    .modal-content .form-main .topsec
-    {
-        padding: 0;
-    }
-    .modal-content .form-main .form-section .btn-close
-    {
-        right: 10px;
-        top: 10px;
     }
 }
