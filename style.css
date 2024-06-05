@@ -881,6 +881,8 @@ a
     display: flex;
     align-items: center;
 }
+
+
 .doctors-section .owl-carousel .owl-item img
 {
     width: unset;
@@ -1644,6 +1646,10 @@ a
     width: 90%;   
     text-transform: capitalize;
 }
+.searchresult-sec .search-main .name-sec .name-section-main
+{
+    width: 80%;
+}
 .searchresult-sec .search-main .rating-sec
 {
     display: flex;
@@ -1705,6 +1711,31 @@ a
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+.searchresult-sec .bottom-btns
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.searchresult-sec .bottom-btns a:nth-child(1)
+{
+    grid-area: 1 / 1 / 2 / 3;
+}
+.searchresult-sec .bottom-btns a:nth-child(2)
+{
+    grid-area: 1/3/2/4;
+}
+.searchresult-sec .bottom-btns a:nth-child(3)
+{
+    grid-area: 1/4/2/5;
+}
+
+.searchresult-sec .search-main .premium-img
+{
+    /* margin-top: -14px; */
+}
+
+
 .searchresult-sec .owl-carousel .owl-item img
 {
     width: unset;
@@ -1890,6 +1921,10 @@ a
     {
         font-size: 16px;
     }
+    .searchresult-sec .search-main .img-sec img:nth-child(2)
+    {
+        margin-top:-18px;
+    }
 
 
 
@@ -1939,6 +1974,14 @@ a
     .searchresult-sec .right-ad
     {
         align-items: center;
+    }
+    .searchresult-sec .search-main .premium-img
+    {
+        width: 24px !important;
+    }
+    .searchresult-sec .search-main .result-doctors
+    {
+        gap: 15px;
     }
 
 
@@ -2699,6 +2742,18 @@ a
     .searchresult-sec .search-main .result-doctors
     {
         border-radius:10px;
+        gap:10px;
+    }
+    .searchresult-sec .search-main .tele-consultation-img{
+        width: 30px !important;
+    }
+    .searchresult-sec .bottom-btns img
+    {
+        width: 14px !important;
+    }
+    .searchresult-sec .search-main .premium-img
+    {
+        width: 18px !important;
     }
     .searchresult-sec .doc-desc p
     {
@@ -2724,7 +2779,7 @@ a
     .searchresult-sec .main-fill-btn
     {
         font-size: 10px;
-        padding: 8px 10px;
+        padding: 5px 8px;
         border-radius: 5px;
     }
     .searchresult-sec .search-main .recommend-sec

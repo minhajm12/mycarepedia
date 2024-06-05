@@ -1,0 +1,391 @@
+.dashboard-section{
+    padding: 0 0 0 20px;
+}
+.dashboard-section p{
+    font-family: var(--metropolis);
+}
+.dashboard-section .dashboard-main{
+    /* padding-top: 20px; */
+}
+.dashboard-section .nav-pills{
+    text-align: start;
+    gap: 20px;
+    width: 20%;
+    padding-top: 20px;
+    background: #fff;
+}
+.dashboard-section .nav-pills ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+}
+.dashboard-section .nav-link{
+    text-align: start;
+    background: #F3F8FF;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    gap: 14px;
+    border-radius: 14px;
+    padding: 20px 20px;
+    font-family: var(--metropolis);
+    color: var(--maincolor);
+}
+.dashboard-section .inner-list .inner-main-item li{
+    padding: 0 26px;
+}
+
+.dashboard-section .inner-list .inner-main-item li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    gap: 20px;
+    color: var(--maincolor);
+}
+.dashboard-section .inner-list .inner-main-item span
+{
+    font-size: 18px;
+}
+.dashboard-section .nav-pills .nav-link.active{
+    background: var(--maincolor);
+    color: #fff;
+}
+.dashboard-section .nav-pills .nav-link.active svg{
+    fill: #fff;
+}
+.dashboard-section .nav-pills .nav-link.active svg path{
+    fill: #fff;
+}
+.dashboard-section .nav-pills .nav-link svg{
+    fill: var(--maincolor);
+}
+.dashboard-section .nav-pills .nav-link svg path{
+    fill: var(--maincolor);
+}
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-content-main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.dashboard-content-main .top-section{
+    display: flex;
+    background: #fff;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.dashboard-content-main .top-section h3{
+    font-weight: 700;
+}
+.dashboard-content-main .top-section .top-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.dashboard-btn{
+    background: var(--scndcolor);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+.dashboard-btn:hover{
+    background: var(--maincolor);
+    color: #fff;
+    border-radius: 8px;
+}
+.dashboard-btn-outline{
+    background: transparent;
+    border: 1px solid var(--maincolor);
+    color: var(--maincolor);
+    padding:5px 30px;
+    border-radius: 8px;
+    transition: .3s ease;
+}
+.dashboard-btn-outline:hover{
+    background: var(--maincolor);
+    color: #fff;
+    border-radius: 8px;
+}
+
+
+.dashboard-content-main .tab-content{
+    background: #eee ;
+    padding: 20px;
+}
+.card-main{
+    border-radius: 20px;
+    background: #fff;
+    padding: 20px;
+}
+.profile-main{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.profile-main .img-div{
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+}
+.profile-main .img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.profile-main .profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-main .profile-details .top-label{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.profile-main .profile-details .top-label a{
+    color: var(--scndcolor);
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.profile-main .profile-details .top-label .insured-label{
+    background: var(--maincolor);
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    gap: 10px;
+}
+.profile-main .profile-details .user-name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.profile-main .profile-details table .side-label{
+    font-size:18px;
+    font-weight: 400;
+}
+.profile-main .profile-details table .input-label{
+    font-size:18px;
+    font-weight: 700;
+}
+.profile-main .profile-details table tr td{
+    vertical-align: top;
+}
+.profile-main .profile-details table tr td:nth-child(1){
+    width: 40%;
+}
+.profile-main .profile-details table tr td:nth-child(3){
+    padding:0 60px 0 20px;
+}
+
+
+
+
+.insurance-card-section
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.insurance-card-section .upload-insurance
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--maincolor);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.upload
+{
+    position: relative;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upload-btn
+{
+    position: absolute;
+    width:fit-content;
+    background: transparent;
+    border: 1px solid var(--maincolor);
+    height: 100%;
+    /* width: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 20px 40px;
+    gap:20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.insurance-card-section h4{
+    font-size: 26px;
+    font-weight: 700;
+}
+.insurance-card-section p{
+    font-size: 20px;
+}
+.insurance-card-section .insurance-card-section{
+
+}
+
+
+
+
+
+
+
+
+.dash-main-head{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.dash-main-head h4
+{
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--maincolor);
+}
+.dash-space{
+    margin-top: 20px;
+}
+
+
+
+.dependents-main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dependents-main table{
+    width: 100%;
+}
+.dependents-main table tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.dependents-main table tr{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    background: #F4F9FF;
+    border-radius: 10px;
+}
+.dependents-main table p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.dependents-main a
+{
+    width: fit-content;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.insured-main-section{
+    height: 100%;
+}
+.insured-main-section .insured-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+.insured-main-section .insured-user-details .img-div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.insured-main-section .insured-user-details .img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.insured-main-section table .side-label{
+    font-size:18px;
+    font-weight: 400;
+}
+.insured-main-section table .input-label{
+    font-size:18px;
+    font-weight: 700;
+}
+.insured-main-section table tr td{
+    vertical-align: top;
+}
+.insured-main-section table tr td:nth-child(1){
+    width: 40%;
+}
+.insured-main-section table tr td:nth-child(3){
+    padding:0 60px 0 20px;
+}
+.insured-main-section h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.insured-main-section .btn-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.insured-main-section .btn-div a
+{
+    padding: 10px 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
