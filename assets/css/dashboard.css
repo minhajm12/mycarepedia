@@ -105,6 +105,9 @@
     padding: 10px 30px;
     border-radius: 8px;
     transition: .3s ease;
+    font-weight: 500;
+    text-wrap: nowrap;
+    font-size: 18px;
 }
 .dashboard-btn:hover{
     background: var(--maincolor);
@@ -118,6 +121,9 @@
     padding:5px 30px;
     border-radius: 8px;
     transition: .3s ease;
+    font-weight: 500;
+    text-wrap: nowrap;
+    font-size: 18px;
 }
 .dashboard-btn-outline:hover{
     background: var(--maincolor);
@@ -170,7 +176,7 @@
 }
 .profile-main .profile-details .top-label .insured-label{
     background: var(--maincolor);
-    padding: 5px 20px;
+    padding: 7px 20px;
     border-radius: 20px;
     color: #fff;
     font-size: 18px;
@@ -287,28 +293,29 @@
     flex-direction: column;
     gap: 20px;
 }
-.dependents-main table{
-    width: 100%;
-}
-.dependents-main table tbody{
+.dependents-main .tablesection{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.dependents-main table tr{
+.dependents-main .tablesection .table-main{
     padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     background: #F4F9FF;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.dependents-main table p{
+.dependents-main .tablesection p{
     font-size: 20px;
     font-weight: 500;
 }
-.dependents-main a
+.dependents-main .dashboard-btn-outline
 {
     width: fit-content;
+    width: 30%;
 }
 
 
@@ -389,3 +396,94 @@
     text-align: center;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.insurance-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.table-row p{
+    font-size: 20px;
+}
+.table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tablehead-row{
+    background: var(--maincolor) !important;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 5px;
+}
+.tablehead-row p{
+    background: var(--maincolor) !important;
+    color: #fff !important;
+}
+.table-row{
+    background: transparent;
+    color: var(--maincolor);
+    padding: 14px 30px;
+    border-radius: 5px;
+}
+.table-row p{
+    font-weight: 500;
+}
+.insurance-section .insurance-table-row .dashboard-btn{
+    width: 100%;
+}
+.insurance-section .dashboard-btn-outline{
+    width: 20%;
+    text-align: center;
+}
+
+/* .insurance-section table tr:nth-child(1){
+    background: var(--maincolor);
+    padding: 10px 40px;
+    border-radius: 10px;
+    color: #fff;
+}
+.insurance-section table tr
+{
+    margin: 10px 40px;
+}
+.insurance-section table tr th{
+    background: var(--maincolor);
+    padding: 10px 40px;
+    color: #fff;
+}
+.insurance-section .table-main{
+    grid-template-columns: repeat(5, 1fr);
+}
+.insurance-section .table-main .table-header{
+    background: var(--maincolor);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+    display: table;
+}
+.insurance-section .table-main .table-header li{
+    list-style-type: none;
+} */
