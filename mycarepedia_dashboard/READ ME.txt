@@ -1,0 +1,10 @@
+DASHBOARD NEW FILES
+
+dashboard.html
+assets > css > dashboard.css
+assets > css > dashboard.js
+assets > img > dashboard
+assets > img > svg > dashboard
+
+
+COPY AND REPLACE THESE IN THE PROJECT FODLER
