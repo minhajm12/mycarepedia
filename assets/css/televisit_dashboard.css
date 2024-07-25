@@ -149,6 +149,22 @@
   color: #fff;
   border-radius: 8px;
 }
+.dashboard-btn-alt {
+  background: var(--maincolor);
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  font-weight: 500;
+  text-wrap: nowrap;
+  font-size: 18px;
+  text-align: center;
+}
+.dashboard-btn-alt:hover {
+  background: var(--scndcolor);
+  color: #fff;
+  border-radius: 8px;
+}
 .common-para-div {
   display: flex;
   align-items: center;
@@ -170,27 +186,7 @@
 }
 
 /* PROFILE MAIN SECTION */
-.dashboard-content-main .iframesection-row iframe{
-  width: 100%;
-  height: 70vh;
-  border-radius: 20px;
-}
-.dashboard-content-main .iframesection-row .main-iframe{
 
-}
-.dashboard-content-main .iframesection-row{
-  position: relative;
-}
-.inner-frame{
-  position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 250px !important;
-  height: 150px !important;
-  border-radius: 10px !important;
-  z-index: 1;
-  border:solid 3px #fff;
-}
 
 
 .dash-main-head {
@@ -207,101 +203,6 @@
   margin-top: 20px;
 }
 
-.table-row p {
-  font-size: 20px;
-}
-.table {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 0;
-}
-.tablehead-row {
-  background: var(--maincolor) !important;
-  color: #fff;
-  padding: 15px 30px;
-  border-radius: 5px;
-}
-.tablehead-row .head {
-  background: var(--maincolor);
-  padding: 0 !important;
-}
-.tablehead-row p {
-  background: var(--maincolor) !important;
-  color: #fff !important;
-  font-size: 20px;
-}
-.table-row {
-  background: transparent;
-  color: var(--maincolor);
-  padding: 14px 30px;
-  border-radius: 5px;
-}
-.table-row p {
-  font-weight: 500;
-  color: var(--maincolor);
-}
-.cols {
-  background: transparent !important;
-  display: flex;
-  align-items: center;
-  padding: 0 !important;
-}
-
-/* APPOINMENT SECTION */
-.appoinment-section {
-  display: flex;
-  flex-direction: column;
-  /* gap: 30px; */
-}
-.appoinment-section .table-row {
-  background: #f8f8f8;
-}
-.appoinment-section .table-row .cols {
-  /* display: flex; */
-  align-items: center;
-  background: transparent;
-}
-.upcmonig-date {
-  color: red !important;
-}
-.past-date {
-  color: #01a811 !important;
-}
-.televisit-section,
-.inperson-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.appoinment-section h4,
-.appoinment-section h4 {
-  font-size: 22px;
-  font-weight: 600;
-}
-.appoinment-section .dashboard-btn {
-  width: 100%;
-}
-
-.nav-pills::-webkit-scrollbar {
-  width: 12px;
-}
-
-.nav-pills::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.nav-pills::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 10px;
-  border: 3px solid #f1f1f1;
-}
-
-.nav-pills::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 /* RESPONSIVE */
 @media screen and (max-width: 1600px) {
@@ -336,12 +237,6 @@
     font-size: 16px;
   }
 
-  .profile-main .profile-details table .side-label {
-    font-size: 16px;
-  }
-  .profile-main .profile-details table .input-label {
-    font-size: 16px;
-  }
 
   .dashboard-btn-outline,
   .dashboard-btn {
@@ -360,7 +255,7 @@
   }
   .dashboard-section .nav {
     position: fixed;
-    width: fit-content;
+    width: 100%;
     left: -100%;
     z-index: 999;
     padding: 20px;
@@ -435,7 +330,7 @@
     justify-content: center;
   }
   .dashboard-content-main .top-section .top-right img {
-    width: 80%;
+    width: 30px;
   }
   .profile-main .profile-details {
     margin-top: 20px;
@@ -454,209 +349,153 @@
   .dashboard-section p {
     font-size: 16px;
   }
-  .profile-main .profile-details .top-label a {
-    font-size: 16px;
-  }
-
-  .tablehead-row,
-  .table-row,
-  .accordion-item {
-    width: 350%;
-  }
-  .insurance-section .dashboard-btn-outline {
-    width: fit-content;
-  }
-
-  .dash-main-head h4 {
-    font-size: 24px;
-  }
-
-  .appoinment-section h4,
-  .appoinment-section h4 {
-    font-size: 18px;
-  }
-  .card-main {
-    padding: 24px;
-  }
 }
 
-/* DOCTORS DASHBOARD CUSTOM CSS */
-.doctors-booknow-sec {
-  font-size: 14px;
-  width: 50%;
-  color: var(--scndcolor);
-  line-height: 16px;
-  font-style: italic;
-}
 
-.sub-section-item {
-  font-size: 16px;
-}
-.subsection {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 5px 0;
-}
-.subsection div {
-  padding-left: 20px;
-  gap: 20px;
-}
-.subsection div p {
-  font-weight: 500;
-}
-.feed-date {
-  font-size: 14px;
-}
-.telehealth-space {
-  padding: 0 10px;
-}
-.review-cmmnt {
-  padding-right: 20px;
-  font-size: 16px !important;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
 
-/* ACCEPTED INSURANCE SECTION */
-.accepted-insurance-section .accordion-button::after {
-  display: none;
-}
-.accepted-insurance-section .accordion-item {
-  border: none;
-}
-.accepted-insurance-section .accordion-header {
-  padding: 0 !important;
-}
-.accepted-insurance-section .accordion-item button {
-  background: transparent;
-  padding: 0 !important;
-  box-shadow: none;
-}
-.accepted-insurance-section .accordion-item button:focus {
-  box-shadow: none;
-}
-.accepted-insurance-section .arrow {
-  transition: 0.3s ease;
-  transform: rotate(90deg);
-}
-.accepted-insurance-section .accordion-button.collapsed .arrow {
-  transform: rotate(0deg);
-}
-.accepted-insurance-section .insurance-plan {
-  display: flex;
-  gap: 10px;
-  justify-content: end;
-}
-.accepted-insurance-section .insurance-plan p {
-  padding: 10px 20px;
-  border-radius: 10px;
-  background: var(--maincolor);
-  width: fit-content;
-  color: #fff;
-}
 
-/* TELEHEALTH SECTION */
-.telehealth-comment {
-  padding-right: 20px;
-  font-size: 16px !important;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
 
-/* DOCOTR PORTAL SECTION */
-.doctors-portal-section table td {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 5px 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashboard-content-main .iframesection-row iframe{
+  width: 100%;
+  height: 70vh;
+  border-radius: 20px;
 }
-.doctors-portal-section table .radio-div {
-  gap: 20px;
+.dashboard-content-main .iframesection-row .main-iframe{
+
 }
-.doctors-portal-section .input-label {
-  font-weight: 600;
-}
-.radio-div input[type="radio"] {
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 1px solid var(--maincolor);
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
+.dashboard-content-main .iframesection-row .frame-section{
   position: relative;
 }
-
-.radio-div input[type="radio"]:checked {
-  background-color: var(--maincolor);
-  border: 1px solid var(--maincolor);
-}
-
-.radio-div input[type="radio"]:checked::before {
-  content: "";
-  display: block;
-  width: 17px;
-  height: 17px;
-  background: #fff;
-  border-radius: 50%;
+.dashboard-content-main .iframesection-row .frame-section .bottom-controls{
   position: absolute;
-  top: 50%;
+  bottom: 50px;
+  border-radius: 60px;
+  background: #ffffff;
+  padding: 15px 60px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
-.radio-div input[type="radio"]:checked::after {
-  content: "";
-  display: block;
-  width: 12px;
-  height: 12px;
-  background: var(--maincolor);
-  border-radius: 50%;
+.inner-frame{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40px;
+  right: 40px;
+  width: 250px !important;
+  height: 150px !important;
+  border-radius: 10px !important;
+  z-index: 1;
+  border:solid 3px #fff;
 }
 
-@media screen and (max-width: 1600px) {
-  .sub-section-item {
-    font-size: 14px !important;
+
+
+
+
+
+.televisit-main-sidebar{
+  padding:20px ;
+}
+.televisit-main-sidebar .televisit-details h4{
+  font-size: 24px;
+  font-weight: 800;
+}
+.televisit-main-sidebar .televisit-details{
+  padding: 30px;
+  border-radius: 20px;
+  background: #f0f6ff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.televisit-details ul{
+  gap: 20px !important;
+}
+.televisit-details li{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.details-title{
+  font-size: 16px;
+  font-weight: 400;
+}
+.details-main{
+  font-size: 18px;
+  font-weight: 700;
+}
+.meet-patient-btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+.meet-patient-btn .dashboard-btn-alt{
+  border-radius: 40px;
+  padding: 10px 40px;
+}
+
+
+
+
+@media only screen and (max-width: 992px)
+{
+  .dashboard-content-main .iframesection-row iframe{
+    height: 45vh;
   }
-  .feed-date {
-    font-size: 14px !important;
+  .inner-frame{
+    top: 20px;
+    right: 20px;
+    width: 200px !important;
+    height: 130px !important;
+  }
+  .dashboard-content-main .iframesection-row .frame-section .bottom-controls{
+    gap: 20px;
+    padding: 12px 30px;
+    bottom: 24px;
+  }
+  .frame-section .bottom-controls img{
+    width: 30px;
   }
 }
 
-@media only screen and (max-width: 999px) {
-  .doctors-portal-section .side-label {
-    width: 200px;
-    padding-right: 20px;
-    line-height: 18px;
-  }
-  .doctors-portal-section table td {
-    padding: 10px 0;
-  }
-  .profile-main .upload-image-btn a {
-    font-size: 14px;
-    padding: 2px 16px;
-  }
-  /* .common {
-    display: flex;
-    flex-direction: column;
-  } */
-  .tab-pane:focus .dashboard-section .nav {
-    left: 0 !important;
-  }
-}
 
-@media only screen and (max-width: 768px) {
-  .dashboard-section .nav {
-    left: -120%;
+@media only screen and (max-width: 768px)
+{
+  .televisit-main-sidebar{
+    padding: 20px 0;
   }
-  .dashboard-content-main .top-section h3 {
-    font-size: 16px;
+  .dashboard-btn, .dashboard-btn-alt {
+    padding: 8px 10px;
+    font-size: 16px !important;
+  }
+  .televisit-main-sidebar .televisit-details h4{
+    font-size: 20px;
+  }
+  .dashboard-content-main .iframesection-row iframe{
+    height: 80vh;
+  }
+  .inner-frame{
+    top: unset;
+    bottom: 100px !important;
+    right: 20px;
+    width: 100px !important;
+    height: 150px !important;
   }
 }

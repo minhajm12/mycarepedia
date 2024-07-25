@@ -240,7 +240,7 @@
             <div class="nav flex-column d-md-block d-lg-block nav-pills me-3 menucnvs" id="v-pills-tab" role="tablist"
                 aria-orientation="vertical">
 
-                <ul>
+                <!-- <ul>
                     <div class="dash-logo">
                         <img src="assets/img/logo/mycarepedia-logo.png" alt="" width="60%">
                         <a href="#" class="menuclose">
@@ -353,12 +353,49 @@
                         </ul>
                     </ul>
 
-                    <a href="#" class="dashboard-btn">Join Televisit</a>
+                    <a href="#" class="dashboard-btn">Join Televisit Now</a>
 
 
 
-                </ul>
+                </ul> -->
 
+                <div class="dash-logo">
+                    <img src="assets/img/logo/mycarepedia-logo.png" alt="" width="60%">
+                    <a href="#" class="menuclose">
+                        <img src="assets/img/svg/dashboard/sidebar-close.svg" alt="">
+                    </a>
+                </div>
+                <div class="televisit-main-sidebar">
+                    <div class="televisit-details">
+                        <h4>Televisit Details</h4>
+                        <ul>
+                            <li>
+                                <p class="details-title">Patient Name:</p>
+                                <p class="details-main">Elanor Pena</p>
+                            </li>
+                            <li>
+                                <p class="details-title">Visit Reason:</p>
+                                <p class="details-main">To consult for my child Cold & Fever</p>
+                            </li>
+                            <li>
+                                <p class="details-title">Date & Time:</p>
+                                <p class="details-main">06/04/2024 11:30pm CST</p>
+                            </li>
+                            <li>
+                                <p class="details-title">Gender:</p>
+                                <p class="details-main">Male</p>
+                            </li>
+                            <li>
+                                <p class="details-title">D.O.B:</p>
+                                <p class="details-main">22/06/1998</p>
+                            </li>
+                        </ul>
+                        <div class="d-flex flex-column gap-2">
+                            <a href="#" class="dashboard-btn">Meet Patient Now</a>
+                            <a href="#" class="dashboard-btn-alt">Patient Details</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
             <!-- SIDEBAR END -->
@@ -373,11 +410,11 @@
                         <h3>Hi, Dr.Richard</h3>
                     </div>
                     <div class="top-right justify-content-end">
-                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        <!-- <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
                             data-bs-title="This link is for booking an appointment behalf of the patient by the doctor's office admim/staff"
                             class="dashboard-btn">Book
                             Appoinment</a>
-                        <a href="">
+                        <a href=""> -->
                             <img src="assets/img/svg/dashboard/bell-icn.svg" alt="">
                         </a>
                         <a href="">
@@ -399,9 +436,26 @@
 
                             <div class="col-lg-12">
 
-                                <iframe src="/assets/img/video/bg-video-1.mp4" title="YouTube video player" frameborder="0" allowfullscreen class="main-iframe"></iframe>
+                               <div class="frame-section">
+                                    <iframe src="assets/img/dashboard/televisit/iframe-img.jpg"  class="main-iframe"></iframe>
 
-                                <iframe src="/assets/img/video/bg-video-1.mp4" title="YouTube video player" frameborder="0" allowfullscreen class="inner-frame"></iframe>
+                                    <iframe src="assets/img/dashboard/televisit/iframe-img-2.jpg"  class="inner-frame"></iframe>
+
+                                    <div class="bottom-controls">
+                                        <a href="">
+                                            <img src="assets/img/dashboard/televisit/mic.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="assets/img/dashboard/televisit/end-call.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="assets/img/dashboard/televisit/video.svg" alt="">
+                                        </a>
+                                    </div>
+                               </div>
+                               <div class="meet-patient-btn">
+                                <a href="" class="dashboard-btn-alt">Meet Patient Now</a>
+                               </div>
 
                             </div>
 
@@ -413,145 +467,6 @@
 
 
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!-- FEEDBACK TAB -->
-                    <div class="tab-pane fade" id="v-pills-feedback" role="tabpanel"
-                        aria-labelledby="v-pills-feedback-tab">
-                        <div class="row dash-space feedback-row">
-                            <div class="col-lg-12">
-                                <div class="fedback-section card-main">
-                                    <div class="dash-main-head">
-                                        <img src="assets/img/svg/dashboard/dependents.svg" alt="" class="img-fluid">
-                                        <h4>Feedback Review</h4>
-                                    </div>
-
-                                    <div class="fedback-table table">
-                                        <div class="fedback-tablehead-row tablehead-row">
-                                            <div class="d-flex">
-                                                <div class="col-2 head">
-                                                    <p>Patient Name</p>
-                                                </div>
-                                                <div class="col-3 head">
-                                                    <p>Visit Date & Time</p>
-                                                </div>
-                                                <div class="col-2 head">
-                                                    <p>Review Status</p>
-                                                </div>
-                                                <div class="col-2 head">
-                                                    <p>Review Comment</p>
-                                                </div>
-                                                <div class="col-1 head">
-                                                    <p>Rating</p>
-                                                </div>
-                                                <div class="col-2 head">
-                                                    <p>Action</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fedback-table-row table-row">
-                                            <div class="d-flex">
-                                                <div class="col-2 cols">
-                                                    <p>David Alexander</p>
-                                                </div>
-                                                <div class="col-3 cols">
-                                                    <p> 06/04/2024 11:30pm CST</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p>Approved</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p class="review-cmmnt">It was an excellent visit It was an
-                                                        excellent visit It was an excellent visit</p>
-                                                </div>
-                                                <div class="col-1 cols">
-                                                    <p>4.8</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <div class="btn-div">
-                                                        <a href="" class="dashboard-btn">Review Comment</a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fedback-table-row table-row">
-                                            <div class="d-flex">
-                                                <div class="col-2 cols">
-                                                    <p>Cody Fisher</p>
-                                                </div>
-                                                <div class="col-3 cols">
-                                                    <p> 06/04/2024 11:30pm CST</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p>Pending</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p class="review-cmmnt">It was an excellent visit It was an
-                                                        excellent visit It was an excellent visit</p>
-                                                </div>
-                                                <div class="col-1 cols">
-                                                    <p>4.8</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <div class="btn-div">
-                                                        <a href="" class="dashboard-btn">Review Comment</a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="fedback-table-row table-row">
-                                            <div class="d-flex">
-                                                <div class="col-2 cols">
-                                                    <p>Eleanor Pena</p>
-                                                </div>
-                                                <div class="col-3 cols">
-                                                    <p> 06/04/2024 11:30pm CST</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p>Pending</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <p class="review-cmmnt">It was an excellent visit It was an
-                                                        excellent visit It was an excellent visit</p>
-                                                </div>
-                                                <div class="col-1 cols">
-                                                    <p>4.8</p>
-                                                </div>
-                                                <div class="col-2 cols">
-                                                    <div class="btn-div">
-                                                        <a href="" class="dashboard-btn">Review Comment</a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <a href="" class="dashboard-btn-outline">View All</a>
-                                        <a href="" class="dashboard-btn-outline ms-4">Manage Feedback</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
 
 
@@ -599,7 +514,7 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Dashboard SCRIPT -->
-    <script src="assets/js/doctors_dashboard.js"></script>
+    <script src="assets/js/televisit_dashboard.js"></script>
 
 </body>
 
